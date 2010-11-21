@@ -1,0 +1,34 @@
+---
+layout: default
+title: What is Diaspora?
+---
+
+h1(section_header). {{ page.title }}
+	
+*Diaspora* is the social network that puts you in control of your information. You decide what you'd like to share, and with whom. You retain full ownership of all your information, including friend lists, messages, photos, and profile details.
+
+Share what you want, with who you want. 
+
+h3. Control: built-in
+
+If you take twenty photos at a party, you can show the three least-incriminating to your coworkers, while posting the whole set to your friends. Your coworkers can't find out that they're seeing the expurgated version. Future employers can't either.
+
+You can post updates to everyone, to just your close friends, to just your family, or to any other subset of your friends. It's easy to make these groups, called "aspects," and it's straightforward to share different things with different aspects. 
+
+h3. Privacy: easy
+
+Diaspora doesn't expose your information to advertisers, or to games you play, or to other websites you visit. It's inherently private - you tell Diaspora who gets to see those pictures of your kids, and only those people will see them. Period.
+
+h3. Find a home
+
+Diaspora is not a single site -- it's a collection of different sites, with different URLs, run by different people. But they all run the same software, and they all talk to each other. Each server is called a "pod." As the service grows, lots of these pods will join the Diaspora network.
+
+The official pod, run by the project's founders, is "http://joindiaspora.com":http://joindiaspora.com. 
+
+All you have to do to get started is choose a home pod! That's where you'll go, log in, and see what your friends are up to. Your home can be at "joindiaspora.com":http://joindiaspora.com, or the Diaspora pod your university runs, or the Diaspora pod your friend sets up on her server.
+
+No matter which home you choose, you can be friends with anyone, even if their home is somewhere else. The pods can securely communicate with each other, no matter where they're located.
+
+h3. Get started!
+
+Choose a home, make an account, and invite your friends to join you! Stop living in a walled garden. *Take back your network.*
