@@ -1,0 +1,83 @@
+---
+layout: default
+title: Diaspora Tutorial - Part 1
+---
+<div class="tutorial">
+  
+h1(section_header). {{ page.title }}
+
+h2. Signing Up for Diaspora
+
+p. Let’s take a look at how a typical person, Roberta, uses Diaspora. Her friend Cathy has helped her set up her own personal Diaspora server, or _pod_.
+
+h3. Signing up
+
+p. Roberta uses her browser to navigate to the pod’s URL, http://roberta.example.com, and sees the splash page, shown in Figure 1 (The website roberta.example.com is just an example. If you want to join a real pod, go to "http://joindiaspora.com":http://joindiaspora.com.)
+
+"!/images/tutorial/000-splashpage.png(Figure 1: The Splash Page)!":/images/tutorial/000-splashpage.png
+
+p. Since this is Roberta’s pod, she doesn’t need an invitation. Instead, she clicks the _log in here_ link to see the main login page (Figure 2).
+
+"!/images/tutorial/001-first-screen.png(Figure 2: The Login Page)!":/images/tutorial/001-first-screen.png
+
+bq. **Note:** On this page, Roberta sees that Diaspora is still very much in its development stages. Her mileage may vary, and so may yours!
+
+p. Since this is her first time using her pod, she must first sign up by clicking the link labeled *Sign up*. This takes her to a page requesting some information, which she fills in (Figure 3).
+
+"!/images/tutorial/002-filled-signup.png(Figure 3: The Sign Up Page)!":/images/tutorial/002-filled-signup.png
+
+p. Diaspora then asks Roberta to complete the signup by editing her profile, managing her aspects (you’ll find out what these are later), and connecting to other services (social networks) she is already using. Her profile starts as shown in Figure 4.
+
+"!/images/tutorial/003-edit-profile.png(Figure 4: Editing a Profile—Personal Information)!":/images/tutorial/003-edit-profile.png
+
+p. At the bottom of the page, Roberta can upload a profile picture. She also decides she would like other people to be able to search for her, so she leaves that checkbox checked (Figure 5).
+
+"!/images/tutorial/004-edit-profile.png(Figure 5: Editing a Profile—Setting a Picture)!":/images/tutorial/004-edit-profile.png
+
+h3. Defining Aspects
+
+p. When Roberta saves her profile information and continues, she is then asked to define her “aspects.”
+
+h3. What’s an Aspect?
+
+p. Your have many roles in your life. Each one of those roles, or facets of your life, is an aspect. For example, part of your life involves your family, and another part involves your work. Diaspora provides you with those two aspects by default.
+p. When Roberta posts messages, she can choose which aspect they belong to. When she posts to the work aspect, the only people who will see the message are the friends who she has put into that aspect.
+
+p. Since part of Roberta’s life involves her bowling team, she creates an aspect where she can add her teammates (Figure 6).
+
+"!/images/tutorial/006-add-aspect.png(Figure 6: Adding an Aspect)!":/images/tutorial/006-add-aspect.png
+
+p. When she finishes adding the aspect, it shows up in her list ( 1).
+
+"!/images/tutorial/007-add-aspect.png(Figure 7: New Aspect Added)!":/images/tutorial/007-add-aspect.png
+
+bq. **Note:** p. Your aspects are private to you; they are a convenient way for you to categorize your contacts. For example, Roberta may add Tuan to her new Bowling Team aspect. When Roberta posts messages to that aspect, they will be broadcast to Tuan.
+
+p. Tuan, on the other hand, may have added Roberta to his “Movie Mania” aspect, so when she posts a message to that aspect, Roberta will receive that message.
+
+p. Neither Roberta nor Tuan knows which aspect they belong to on the other person’s pod.
+
+
+h3. Connecting Your Services
+
+p. Cathy set up Roberta’s server so that she can connect to Twitter (Figure 8). Roberta isn’t ready to set that up yet, so she decides to just save and continue.
+
+"!/images/tutorial/008-connect-services.png(Figure 8: Connecting to Services)!":/images/tutorial/008-connect-services.png
+
+h3. Setup Complete!
+
+p. Roberta is now ready to start using Diaspora. She can continue to the “everyone” page, which shows all her posts in all her aspects (Figure 9).
+
+"!/images/tutorial/009-signup-complete.png(Figure 9: Setup Complete)!":/images/tutorial/009-signup-complete.png
+
+h3. Creating the First Post
+
+p. Roberta will look at all of the navigation aids on the page later, but right now, she wants to make her first post. When she starts to enter her message, a checkbox labeled _make public_ appears. If Roberta wanted to make this post available for people outside of Diaspora to see, she would check this box. But for now, she just writes a quick test message, shown in Figure 10 
+
+"!/images/tutorial/011-first-post.png(Figure 10: Roberta’s First Post)!":/images/tutorial/011-first-post.png
+
+p. Roberta clicks the _Share_ button, and voilà—her message appears (Figure 11).
+
+"!/images/tutorial/012-first-post-posted.png(Figure 11: The First Post Appears)!":/images/tutorial/012-first-post-posted.png
+
+</div>
