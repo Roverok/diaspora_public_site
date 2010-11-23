@@ -4,13 +4,43 @@
  <title>Join Diaspora Blog</title>
  <link href="http://www.joindiaspora.com/atom.xml" rel="self"/>
  <link href="http://www.joindiaspora.com/"/>
- <updated>2010-11-22T09:45:18-08:00</updated>
+ <updated>2010-11-23T01:09:16-08:00</updated>
  <id>http://www.joindiaspora.com/</id>
  <author>
    <name>diaspora</name>
    <email>team@joindiaspora.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Private Alpha Invites Going Out Today</title>
+   <link href="http://www.joindiaspora.com//2010/11/23/private-alpha-released.html"/>
+   <updated>2010-11-23T00:00:00-08:00</updated>
+   <id>http://www.joindiaspora.com//2010/11/23/private-alpha-released</id>
+   <content type="html">&lt;h2&gt;Private Alpha Invites Going Out Today&lt;/h2&gt;
+&lt;p class=&quot;meta&quot;&gt;23 November 2010&lt;/p&gt;
+&lt;p&gt;Hello Everyone,&lt;/p&gt;
+&lt;p&gt;Today we’re releasing the first set of invites for the Diaspora alpha at &lt;a href=&quot;http://joindiaspora.com&quot;&gt;joindiaspora.com&lt;/a&gt;. Every week, we’ll invite more people, starting with our Kickstarter backers, and then moving through our mailing list. By taking these baby steps, we’ll be able to quickly identify performance problems and iterate on features as quickly as possible.&lt;/p&gt;
+&lt;p&gt;We are proud of where Diaspora is right now. In less than five months, we’ve gone from nothing to a great starting point from which the community can keep working.  We’ve spent a lot of time thinking about how people can share in a private way, and still do all the things people love to do on social networks. We hope you’ll find it fun to use and a great way to keep in touch with all the people in your life.&lt;/p&gt;
+&lt;p&gt;Diaspora lets you create “aspects,” which are personal lists that let you group people according to the roles they play in your life. We think that aspects are a simple, straightforward, lightweight way to make it really clear who is receiving your posts and who you are receiving posts from. It isn’t perfect, but the best way to improve is to get it into your hands and listen closely to your response.&lt;/p&gt;
+&lt;p&gt;We know some things could be better. To name a few:&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Continuing to focus on security.&lt;/b&gt;&lt;br /&gt;
+	When we released our initial code, we got some great feedback on better ways to do Rails security. Luckily, it was easy for us to take this feedback and quickly secure the application. We look forward to more such feedback with this release.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;More extensibility and third-party client APIs.&lt;/b&gt;&lt;br /&gt;
+	Third-party clients are a vital part of the social media landscape. We have initial support for connections with some services, but there’s more to do. It’s important for users to be able to use a wide variety of clients and platforms to share on Diaspora.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Better documentation.&lt;/b&gt;&lt;br /&gt;
+	Our community has made great strides in creating documentation to make it easy for anyone to get started with Diaspora. As in most open-source projects, though, there is a lot more to do.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Easier upgrade path.&lt;/b&gt;&lt;br /&gt;
+	Diaspora has been in constant flux since we did our first code release, and we salute those who have been trying to keep their servers up-to-date. We hope to make this easier going forward.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Cleaner code.&lt;/b&gt; &lt;br /&gt;
+Our number one goal has been releasing something that works. Sometimes that means making a bit of a mess. Now that we have working features, we can double down on making the code more concise and straightforward, and improving our test suite.&lt;/p&gt;
+&lt;p&gt;If you haven’t yet signed up to get an invite, head over to &lt;a href=&quot;http://joindiaspora.com&quot;&gt;joindiaspora.com&lt;/a&gt; and do so!  If you remember giving us your email sometime in the past, you can be sure that you will receive an invite soon.&lt;/p&gt;
+&lt;p&gt;Our work is nowhere close to done. To us, that is the best part. There are always more things to improve, more tricks to learn, and more awesome features to add.&lt;/p&gt;
+&lt;p&gt;See you on Diaspora,&lt;/p&gt;
+&lt;p&gt;Maxwell, Raphael, Daniel and Ilya&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;If you are a Ruby or JavaScript hacker, Diaspora wants you. We are building a passionate community of developers to keep making Diaspora more awesome. If you enjoy building and breaking the next generation of social tools, we’d love your contributions. &lt;a href=&quot;http://github.com/diaspora/diaspora&quot;&gt;http://github.com/diaspora/diaspora&lt;/a&gt;&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;If you’d like to set up a Diaspora server (“pod”) of your own, you can see instructions at &lt;a href=&quot;https://github.com/diaspora/diaspora/wiki/&quot;&gt;our wiki&lt;/a&gt;.&lt;/i&gt;&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>October Update</title>
