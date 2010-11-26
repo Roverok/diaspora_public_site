@@ -1,0 +1,17 @@
+---
+layout: post
+title: Invite Update 
+---
+h2. {{ page.title }}
+
+p(meta). 26 November 2010
+
+Hello Everyone,
+
+Just to let you all know, we are closing invited sign-ups for a bit so we can take the great usage data we have received over the last few days and turn them into tangible results. Invites sent to your friends are still valid, but they will need to wait until sometime next week until they are able to accept it.
+
+Expect an update once we are are ready to send out more invites!
+
+Until then,
+
+Maxwell, Daniel, Raphael, and Ilya
