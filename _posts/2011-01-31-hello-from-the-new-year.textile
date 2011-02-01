@@ -1,0 +1,39 @@
+---
+layout: post
+title: Hello From 2011 
+---
+h2. {{ page.title }}
+
+p(meta). 31 January 2011
+
+Hello everyone,
+
+
+We are still alive.  It has been eight months since we began work, and we are extremely happy with our progress.  Since we entered our private alpha in November:
+
+
+p((((((. Diaspora became the fifth most watched project on "Github":https://github.com/popular/watched 
+         ReadWriteWeb named Diaspora a "Top Ten Startup of 2010":http://www.readwriteweb.com/archives/top_10_startups_of_2010p2.php
+         Mashable called us one of the "Top 10 Sites to Watch in 2011":http://mashable.com/2011/01/03/websites-to-watch-in-2011/ 
+         Black Duck Software named us "Open Source Rookie of the Year":http://www.blackducksoftware.com/news/releases/2011-01-07
+
+
+
+Last year was an amazing year, one we will never forget.  There is much work left to do, but we think 2011 will be the year that Diaspora changes the internet for the better.  We can't wait to see what unfolds.
+
+
+If you are waiting for an alpha invite, please bear with us.  We are grateful we have our Kickstarter backers and their friends testing it out, and we are using their feedback to improve Diaspora constantly.  If you are a Kickstarter backer and you haven’t received an invite, please email feedback@joindiaspora.com, and we’ll take care of it.
+
+
+Now, back to work!
+
+
+Till next time,
+
+
+Daniel, Ilya, Raphael, and Maxwell
+
+
+
+If you love Ruby or Javascript, Diaspora wants you!  Send us a "pull request":https://github.com/diaspora/diaspora/wiki/Git-Workflow and join our community.  No contribution is too small!
+

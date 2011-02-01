@@ -4,13 +4,34 @@
  <title>Join Diaspora Blog</title>
  <link href="http://www.joindiaspora.com/atom.xml" rel="self"/>
  <link href="http://www.joindiaspora.com/"/>
- <updated>2010-11-26T10:36:30-08:00</updated>
+ <updated>2011-01-31T16:04:04-08:00</updated>
  <id>http://www.joindiaspora.com/</id>
  <author>
    <name>diaspora</name>
    <email>team@joindiaspora.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Hello From 2011</title>
+   <link href="http://www.joindiaspora.com//2011/01/31/hello-from-the-new-year.html"/>
+   <updated>2011-01-31T00:00:00-08:00</updated>
+   <id>http://www.joindiaspora.com//2011/01/31/hello-from-the-new-year</id>
+   <content type="html">&lt;h2&gt;Hello From 2011&lt;/h2&gt;
+&lt;p class=&quot;meta&quot;&gt;31 January 2011&lt;/p&gt;
+&lt;p&gt;Hello everyone,&lt;/p&gt;
+&lt;p&gt;We are still alive.  It has been eight months since we began work, and we are extremely happy with our progress.  Since we entered our private alpha in November:&lt;/p&gt;
+&lt;p style=&quot;padding-left:6em;&quot;&gt;Diaspora became the fifth most watched project on &lt;a href=&quot;https://github.com/popular/watched&quot;&gt;Github&lt;/a&gt; &lt;br /&gt;
+         ReadWriteWeb named Diaspora a &lt;a href=&quot;http://www.readwriteweb.com/archives/top_10_startups_of_2010p2.php&quot;&gt;Top Ten Startup of 2010&lt;/a&gt;&lt;br /&gt;
+         Mashable called us one of the &lt;a href=&quot;http://mashable.com/2011/01/03/websites-to-watch-in-2011/&quot;&gt;Top 10 Sites to Watch in 2011&lt;/a&gt; &lt;br /&gt;
+         Black Duck Software named us &lt;a href=&quot;http://www.blackducksoftware.com/news/releases/2011-01-07&quot;&gt;Open Source Rookie of the Year&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Last year was an amazing year, one we will never forget.  There is much work left to do, but we think 2011 will be the year that Diaspora changes the internet for the better.  We can&amp;#8217;t wait to see what unfolds.&lt;/p&gt;
+&lt;p&gt;If you are waiting for an alpha invite, please bear with us.  We are grateful we have our Kickstarter backers and their friends testing it out, and we are using their feedback to improve Diaspora constantly.  If you are a Kickstarter backer and you haven’t received an invite, please email feedback@joindiaspora.com, and we’ll take care of it.&lt;/p&gt;
+&lt;p&gt;Now, back to work!&lt;/p&gt;
+&lt;p&gt;Till next time,&lt;/p&gt;
+&lt;p&gt;Daniel, Ilya, Raphael, and Maxwell&lt;/p&gt;
+&lt;p&gt;If you love Ruby or Javascript, Diaspora wants you!  Send us a &lt;a href=&quot;https://github.com/diaspora/diaspora/wiki/Git-Workflow&quot;&gt;pull request&lt;/a&gt; and join our community.  No contribution is too small!&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Invite Update</title>
