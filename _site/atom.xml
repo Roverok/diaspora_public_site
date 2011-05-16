@@ -4,13 +4,30 @@
  <title>Join Diaspora Blog</title>
  <link href="http://www.joindiaspora.com/atom.xml" rel="self"/>
  <link href="http://www.joindiaspora.com/"/>
- <updated>2011-01-31T16:04:04-08:00</updated>
+ <updated>2011-05-15T22:03:30-07:00</updated>
  <id>http://www.joindiaspora.com/</id>
  <author>
    <name>diaspora</name>
    <email>team@joindiaspora.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Moving Forward</title>
+   <link href="http://www.joindiaspora.com//2011/05/16/moving-forward.html"/>
+   <updated>2011-05-16T00:00:00-07:00</updated>
+   <id>http://www.joindiaspora.com//2011/05/16/moving-forward</id>
+   <content type="html">&lt;h2&gt;Moving Forward&lt;/h2&gt;
+&lt;p class=&quot;meta&quot;&gt;16 May 2011&lt;/p&gt;
+&lt;p&gt;It’s hard to believe, but we’ve been working on Diaspora for a whole year now. And I am happy to report that we’re still here, and we’re going strong. From those first pizza-fueled nights in the &lt;span class=&quot;caps&quot;&gt;ACM&lt;/span&gt; room at &lt;span class=&quot;caps&quot;&gt;NYU&lt;/span&gt;, to the Kickstarter going bonkers, to our journey west to San Francisco to work at Pivotal Labs, this past year has been a crazy, unending dream.&lt;/p&gt;
+&lt;p&gt;Lots of people besides us are excited about Diaspora. ReadWriteWeb put us on their list of &lt;a href=&quot;http://www.readwriteweb.com/archives/top_10_startups_of_2010p2.php&quot;&gt;Top Ten Startups of 2011&lt;/a&gt;, Black Duck Software called us the &lt;a href=&quot;http://www.blackducksoftware.com/news/releases/2011-01-07&quot;&gt;Open Source Rookie of the Year,&lt;/a&gt; and our vocal alpha users are giving us great feedback. (Don’t worry, we see your suggestions! There is much to do!)  Heck, if you Google ‘github’, our repository is the third result!&lt;/p&gt;
+&lt;p&gt;For the past few months, we’ve been pretty quiet, because we’ve been hard at work. Ilya and Daniel have been working on some back end changes, focusing on the “share model” (&lt;a href=&quot;http://bit.ly/m9Udjf&quot;&gt;more detail here&lt;/a&gt;) and building out a framework so pods and client applications can authenticate with each other. These changes are also going to make it easier to interoperate with other federated social networking applications.  Raphael has been working on performance and code cleanup, and I have been trying to brainstorm ways to expand our team, to ensure Diaspora is a long term endeavor.&lt;/p&gt;
+&lt;p&gt;Until now we have been four dudes and a handful of dedicated open-source contributors trying to listen to user feedback, code new features, help people install software, and talk to the press &amp;#8212; all at once. More than anything, our user feedback has been “go faster.” So go faster is what we are going to do.  If we are going to make Diaspora successful, we need the support from lots of different people.  Recently we have been focused on reaching out to different groups and organizations, and seeing what we can do to get more people involved and invested in Diaspora.  While it takes time away from coding, talking about Diaspora helps hone our vision, and gets even more people excited about what we are doing.&lt;/p&gt;
+&lt;p&gt;The next order of business is to state clearly “what we are all about.”  We certainly have not been good at updating people on our work, so unless you have been following us on &lt;a href=&quot;https://github.com/diaspora/diaspora&quot;&gt;GitHub&lt;/a&gt;, you are probably wondering where we are going. Diaspora is a long-term endeavor, and is about an idea bigger than a single feature set or trend. We are working on an outline of what we have learnt so far, and where we see Diaspora going in the next year. We look forward to sharing it with you.&lt;/p&gt;
+&lt;p&gt;Watch this space.&lt;/p&gt;
+&lt;p&gt;Talk to you soon,&lt;br /&gt;
+Maxwell&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Hello From 2011</title>
