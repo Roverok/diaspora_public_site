@@ -8,7 +8,7 @@ p(meta). 16 May 2011
 
 It’s hard to believe, but we’ve been working on Diaspora for a whole year now. And I am happy to report that we’re still here, and we’re going strong. From those first pizza-fueled nights in the ACM room at NYU, to the Kickstarter going bonkers, to our journey west to San Francisco to work at Pivotal Labs, this past year has been a crazy, unending dream.
 
-Lots of people besides us are excited about Diaspora. ReadWriteWeb put us on their list of "Top Ten Startups of 2011":http://www.readwriteweb.com/archives/top_10_startups_of_2010p2.php, Black Duck Software called us the "Open Source Rookie of the Year,":http://www.blackducksoftware.com/news/releases/2011-01-07 and our vocal alpha users are giving us great feedback. (Don’t worry, we see your suggestions! There is much to do!)  Heck, if you Google ‘github’, our repository is the third result! 
+Lots of people besides us are excited about Diaspora. ReadWriteWeb put us on their list of "Top Ten Startups of 2011":http://www.readwriteweb.com/archives/top_10_startups_of_2010p2.php, Black Duck Software called us the "Open Source Rookie of the Year,":http://www.blackducksoftware.com/news/releases/2011-01-07 and our vocal alpha users are giving us great feedback. (Don’t worry, we see your suggestions! There is much to do!)  Heck, if you Google ‘github’, our repository is the third result!* 
 
 For the past few months, we’ve been pretty quiet, because we’ve been hard at work. Ilya and Daniel have been working on some back end changes, focusing on the “share model” ("more detail here":http://bit.ly/m9Udjf) and building out a framework so pods and client applications can authenticate with each other. These changes are also going to make it easier to interoperate with other federated social networking applications.  Raphael has been working on performance and code cleanup, and I have been trying to brainstorm ways to expand our team, to ensure Diaspora is a long term endeavor.
 
@@ -21,3 +21,5 @@ Watch this space.
 Talk to you soon,
 Maxwell
  
+
+*5/16/11 Update: Looks like Google updated their index. Now we are not quite third :P
