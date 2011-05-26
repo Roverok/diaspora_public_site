@@ -88,6 +88,14 @@ div#footer_right { float: right; width: 50% }
 div#footer ul { margin: 0; padding: 0; display:inline; }
 div#footer li { list-style: none; padding: 3px; }
 
+a.licence{float:left; }
+#donate{float: right;position:relative;}
+#donate span{
+  position: absolute;
+  right:82px;
+  width: 122px;
+  bottom: 7px;
+}
 div#footer span.footer_statement {
 	display: block;
 	font-weight: bold;
