@@ -1,0 +1,12 @@
+---
+layout: default
+title: thanks for your contribution! 
+---
+
+h1(section_header). {{ page.title }}
+
+We are so excited about your contribution to Diaspora.  Your gift will help fund building our open source communinty infastructure, such as servers and meetups, and a few late night pizzas.
+
+Thanks again,
+
+The Diaspora Team
