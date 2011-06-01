@@ -4,7 +4,7 @@
  <title>Join Diaspora Blog</title>
  <link href="http://www.joindiaspora.com/atom.xml" rel="self"/>
  <link href="http://www.joindiaspora.com/"/>
- <updated>2011-06-01T13:51:36-07:00</updated>
+ <updated>2011-06-01T14:26:40-07:00</updated>
  <id>http://www.joindiaspora.com/</id>
  <author>
    <name>diaspora</name>
@@ -13,30 +13,38 @@
 
  
  <entry>
-   <title>The First Year In Numbers</title>
-   <link href="http://www.joindiaspora.com//2011/06/01/dont-stop-till-you-get-enough.html"/>
+   <title>The Diaspora Project -  First Year In Graphs</title>
+   <link href="http://www.joindiaspora.com//2011/06/01/graphs-graphs-graphs.html"/>
    <updated>2011-06-01T00:00:00-07:00</updated>
-   <id>http://www.joindiaspora.com//2011/06/01/dont-stop-till-you-get-enough</id>
-   <content type="html">&lt;h2&gt;The First Year In Numbers&lt;/h2&gt;
+   <id>http://www.joindiaspora.com//2011/06/01/graphs-graphs-graphs</id>
+   <content type="html">&lt;h2&gt;The Diaspora Project &amp;#8211;  First Year In Graphs&lt;/h2&gt;
 &lt;p class=&quot;meta&quot;&gt;01 June 2011&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/images/june01/beaver.png&quot; title=&quot;a card my sister got me for my birthday&quot; alt=&quot;a card my sister got me for my birthday&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Hi Everyone,&lt;/p&gt;
-&lt;p&gt;As we move into the next phase of the Diaspora story, I thought it might be interesting to provide some numbers on the great progress we have made so far.  Unless you’ve been following our Github repository, it would be hard to see all the work we have put into Diaspora thepast year.&lt;/p&gt;
-&lt;p&gt;According to Github, we commit all hours of the day, but we do keep ourselves working our 9-7 most of the time.  We tend to commit mostly after lunch (om nom nom nom nom).&lt;/p&gt;
+&lt;p&gt;As we move into the next phase of the Diaspora story, I thought it might be interesting to provide some numbers on the great progress we have made so far.  Unless you’ve been following our GitHub repository, it would be hard to see all the work we have put into Diaspora thepast year.&lt;/p&gt;
+&lt;p&gt;According to GitHub, we commit all hours of the day, but we do keep ourselves working our 9-7 most of the time.  We tend to commit mostly after lunch (om nom nom nom nom).&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/diaspora/diaspora/graphs/punch_card&quot;&gt;&lt;img src=&quot;/images/june01/punchchart.png&quot; title=&quot;punchchart&quot; alt=&quot;punchchart&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;On the community front, people have been getting involved.  Diaspora has had over 100 unique code contributors and countless others have edited our wiki and updated Diaspora’s translations in over &lt;a href=&quot;http://99translations.com/public_projects/show/181&quot;&gt;51 languages&lt;/a&gt;.   We have over 4,600 followers and over 840 forks, which means that tons of developers are checking out our code.  That makes us the &lt;a href=&quot;https://github.com/popular/watched&quot;&gt;sixth most popular project on Github&lt;/a&gt;, right behind great open source projects like &lt;a href=&quot;https://github.com/jquery/jquery&quot;&gt;JQuery&lt;/a&gt;, &lt;a href=&quot;https://github.com/rails/rails&quot;&gt;Ruby On Rails&lt;/a&gt;, and &lt;a href=&quot;https://github.com/joyent/node&quot;&gt;Node&lt;/a&gt;, just to name a few.&lt;/p&gt;
+&lt;p&gt;On the community front, people have been getting involved.  Diaspora has had over 100 unique code contributors and countless others have edited our wiki and updated Diaspora’s translations in over &lt;a href=&quot;http://99translations.com/public_projects/show/181&quot;&gt;51 languages&lt;/a&gt;.   We have over 4,600 followers and over 840 forks, which means that tons of developers are checking out our code.  That makes us the &lt;a href=&quot;https://github.com/popular/watched&quot;&gt;sixth most popular project on GitHub&lt;/a&gt;, right behind great open source projects like &lt;a href=&quot;https://github.com/jquery/jquery&quot;&gt;JQuery&lt;/a&gt;, &lt;a href=&quot;https://github.com/rails/rails&quot;&gt;Ruby On Rails&lt;/a&gt;, and &lt;a href=&quot;https://github.com/joyent/node&quot;&gt;Node&lt;/a&gt;, just to name a few.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;i&gt;Number of pageviews of &lt;a href=&quot;http://github.com/diaspora/diaspora&quot;&gt;our GitHub page&lt;/a&gt; the last three months&lt;/i&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/diaspora/diaspora/graphs/traffic&quot;&gt;&lt;img src=&quot;/images/june01/traffic.png&quot; title=&quot;traffic&quot; alt=&quot;traffic&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;i&gt;It’s a group effort! (Click the image to see an interactive impact graph)&lt;/i&gt;&lt;/strong&gt;&lt;br /&gt;
 &lt;a href=&quot;https://github.com/diaspora/diaspora/graphs/impact&quot;&gt;&lt;img src=&quot;/images/june01/impact.png&quot; title=&quot;impact&quot; alt=&quot;impact&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;i&gt;Want more Diaspora data? Check out our &lt;a href=&quot;/images/diaspora-stats06012011/activity.html&quot;&gt;gitstats!&lt;/a&gt;&lt;/i&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;If you are a developer, you should fork or follow us on Github, and hang out in &lt;a href=&quot;http://webchat.freenode.net/?channels=diaspora-dev&quot;&gt;#diaspora-dev&lt;/a&gt;. &lt;strong&gt;If you submit one or more &lt;a href=&quot;https://github.com/diaspora/diaspora/wiki/Git-Workflow&quot; title=&quot;s&quot;&gt;well formed pull request&lt;/a&gt; with an excellent attitude, we will add you as a core commiter to the main repo.&lt;/strong&gt; If you haven’t looked at the code in awhile, now is the best time to jump back in. More developer documentation is coming soon.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Focus on the big push&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;As the 400k people on our beta invite waiting list already know, we still have been getting feedback and building out features for our initial group of our 6,500 Kickstarter backers who are helping us alpha test.  (to those on the waiting list: we haven’t forgot you!  We are just trying to get Diaspora ready for the huge onslaught of interest.  If you are on our mailing list, you will be getting an email update soon confirming that you are on the list.  Invites will be served in the order that they were received)&lt;/p&gt;
-&lt;p&gt;All and all, we have seen over 100 different installations connect to https://joindiaspora.com, ranging from 1 to 25,000 people.  We have over 100,000 people help alpha test Diaspora, from all over the world.  Diaspora is especially popular in Italy, Germany, and France, so props to Europe on being hip to the future of the web.&lt;/p&gt;
-&lt;p&gt;Recent development efforts have focused on prepping for the onslaught of new users once we open Diaspora up for more general testing, building our first “Diaspora Application”.  This is going to help drive our APIs to let Diaspora integrate with the Internet at large.  Since up until this point we have actively discouraging masses of people of trying Diaspora, we have been pretty happy with these numbers so far.  Turns out, you only need a manageable amount of users to know if your new feature works or not.&lt;/p&gt;
+&lt;p&gt;If you are a developer, you should fork or follow us on GitHub, and hang out in &lt;a href=&quot;http://webchat.freenode.net/?channels=diaspora-dev&quot;&gt;#diaspora-dev&lt;/a&gt;. &lt;strong&gt;If you submit one or more &lt;a href=&quot;https://github.com/diaspora/diaspora/wiki/Git-Workflow&quot; title=&quot;s&quot;&gt;well formed pull request&lt;/a&gt; with an excellent attitude, we will add you as a core commiter to the main repo.&lt;/strong&gt; If you haven’t looked at the code in awhile, now is the best time to jump back in. More developer documentation is coming soon.&lt;/p&gt;
 &lt;p&gt;We are going to keep everyone posted about the progress we are making over the next month. We have some really exciting things we can’t wait to announce.  Stay tuned!&lt;/p&gt;
-&lt;p&gt;- Maxwell&lt;/p&gt;</content>
+&lt;p&gt;- Maxwell&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Stay up to Date with Diaspora&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;i&gt;&lt;a href=&quot;http://github.com/diaspora/diaspora&quot;&gt;Github&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;i&gt;&lt;a href=&quot;http://www.pivotaltracker.com/projects/61641&quot;&gt;Tracker&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;i&gt;&lt;a href=&quot;http://ci.joindiaspora.com&quot;&gt;Test Status&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;i&gt;&lt;a href=&quot;http://groups.google.com/group/diaspora-dev&quot;&gt;Development Mailing List&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;i&gt;&lt;a href=&quot;http://groups.google.com/group/diaspora-discuss&quot;&gt;Discuss Mailing List&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;i&gt;&lt;a href=&quot;http://twitter.com/joindiaspora&quot;&gt;twitter&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;i&gt;&lt;a href=&quot;http://identi.ca/joindiaspora&quot;&gt;identi.ca&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;i&gt;&lt;a href=&quot;http://blog.joindiaspora.com&quot;&gt;homepage&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;i&gt;&lt;a href=&quot;http://bit.ly/c94G4h&quot;&gt;mailing list&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
  </entry>
  
  <entry>

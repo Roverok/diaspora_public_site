@@ -1,0 +1,60 @@
+---
+layout: post
+title: The Diaspora Project -  First Year In Graphs
+---
+h2. {{page.title}}
+
+p(meta). 01 June 2011
+
+!/images/june01/beaver.png(a card my sister got me for my birthday)!
+
+
+
+Hi Everyone, 
+
+As we move into the next phase of the Diaspora story, I thought it might be interesting to provide some numbers on the great progress we have made so far.  Unless you’ve been following our GitHub repository, it would be hard to see all the work we have put into Diaspora thepast year.
+
+According to GitHub, we commit all hours of the day, but we do keep ourselves working our 9-7 most of the time.  We tend to commit mostly after lunch (om nom nom nom nom).
+
+!/images/june01/punchchart.png(punchchart)!:https://github.com/diaspora/diaspora/graphs/punch_card
+
+On the community front, people have been getting involved.  Diaspora has had over 100 unique code contributors and countless others have edited our wiki and updated Diaspora’s translations in over "51 languages":http://99translations.com/public_projects/show/181.   We have over 4,600 followers and over 840 forks, which means that tons of developers are checking out our code.  That makes us the "sixth most popular project on GitHub":https://github.com/popular/watched, right behind great open source projects like "JQuery":https://github.com/jquery/jquery, "Ruby On Rails":https://github.com/rails/rails, and "Node":https://github.com/joyent/node, just to name a few.  
+
+
+
+*__Number of pageviews of "our GitHub page":http://github.com/diaspora/diaspora the last three months__*
+
+!/images/june01/traffic.png(traffic)!:https://github.com/diaspora/diaspora/graphs/traffic
+
+
+
+
+*__It’s a group effort! (Click the image to see an interactive impact graph)__*
+!/images/june01/impact.png(impact)!:https://github.com/diaspora/diaspora/graphs/impact
+
+
+
+
+*__Want more Diaspora data? Check out our "gitstats!":/images/diaspora-stats06012011/activity.html__*
+
+If you are a developer, you should fork or follow us on GitHub, and hang out in "#diaspora-dev":http://webchat.freenode.net/?channels=diaspora-dev. *If you submit one or more "well formed pull request(s)":https://github.com/diaspora/diaspora/wiki/Git-Workflow with an excellent attitude, we will add you as a core commiter to the main repo.* If you haven’t looked at the code in awhile, now is the best time to jump back in. More developer documentation is coming soon.
+
+
+We are going to keep everyone posted about the progress we are making over the next month. We have some really exciting things we can’t wait to announce.  Stay tuned!
+
+- Maxwell
+
+
+
+*Stay up to Date with Diaspora*
+* __"Github":http://github.com/diaspora/diaspora__
+* __"Tracker":http://www.pivotaltracker.com/projects/61641__
+* __"Test Status":http://ci.joindiaspora.com__
+* __"Development Mailing List":http://groups.google.com/group/diaspora-dev__
+* __"Discuss Mailing List":http://groups.google.com/group/diaspora-discuss__
+* __"twitter":http://twitter.com/joindiaspora__
+* __"identi.ca":http://identi.ca/joindiaspora__
+* __"homepage":http://blog.joindiaspora.com__
+* __"mailing list":http://bit.ly/c94G4h__
+
+
