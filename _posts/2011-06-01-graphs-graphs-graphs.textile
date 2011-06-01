@@ -37,7 +37,7 @@ On the community front, people have been getting involved.  Diaspora has had ove
 
 *__Want more Diaspora data? Check out our "gitstats!":/images/diaspora-stats06012011/activity.html__*
 
-If you are a developer, you should fork or follow us on GitHub, and hang out in "#diaspora-dev":http://webchat.freenode.net/?channels=diaspora-dev. *If you submit one or more "well formed pull request(s)":https://github.com/diaspora/diaspora/wiki/Git-Workflow with an excellent attitude, we will add you as a core commiter to the main repo.* If you haven’t looked at the code in awhile, now is the best time to jump back in. More developer documentation is coming soon.
+If you are a developer, you should fork or follow us on GitHub, and hang out in "#diaspora-dev":http://webchat.freenode.net/?channels=diaspora-dev. *If you submit one or more "well formed pull request(s)":https://github.com/diaspora/diaspora/wiki/Git-Workflow, we will add you as a core commiter to the main repo.* If you haven’t looked at the code in awhile, now is the best time to jump back in. More developer documentation is coming soon.
 
 
 We are going to keep everyone posted about the progress we are making over the next month. We have some really exciting things we can’t wait to announce.  Stay tuned!
