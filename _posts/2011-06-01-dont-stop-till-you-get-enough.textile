@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Don't Stop 'Till You Get Enough 
+title: The First Year In Numbers 
 ---
 h2. {{page.title}}
 
@@ -29,7 +29,7 @@ On the community front, people have been getting involved.  Diaspora has had ove
 
 
 
-*__It’s a group effort! (Click the image to see an interactive influencer graph of Diaspora)__*
+*__It’s a group effort! (Click the image to see an interactive impact graph)__*
 !/images/june01/impact.png(impact)!:https://github.com/diaspora/diaspora/graphs/impact
 
 
@@ -42,8 +42,14 @@ If you are a developer, you should fork or follow us on Github, and hang out in 
 *Focus on the big push*
 
 As the 400k people on our beta invite waiting list already know, we still have been getting feedback and building out features for our initial group of our 6,500 Kickstarter backers who are helping us alpha test.  (to those on the waiting list: we haven’t forgot you!  We are just trying to get Diaspora ready for the huge onslaught of interest.  If you are on our mailing list, you will be getting an email update soon confirming that you are on the list.  Invites will be served in the order that they were received)
- All and all, we have seen over 100 different installations connect to https://joindiaspora.com, ranging from 1 to 25,000 people.  We have over 100,000 people help alpha test Diaspora, from all over the world.  Diaspora is especially popular in Italy, Germany, and France, so props to Europe on being hip to the future of the web.  
-Recent development efforts have focused on prepping for the onslaught of new users once we open Diaspora up for more general testing, building our first “Diaspora Application”.  This is going to help drive our APIs to let Diaspora integrate with the Internet at large.  Since up until this point we have actively discouraging masses of people of trying Diaspora, we have been pretty happy with these numbers so far.  Turns out, you only need a manageable amount of users to know if your new feature works or not.  
+
+
+All and all, we have seen over 100 different installations connect to https://joindiaspora.com, ranging from 1 to 25,000 people.  We have over 100,000 people help alpha test Diaspora, from all over the world.  Diaspora is especially popular in Italy, Germany, and France, so props to Europe on being hip to the future of the web.
+
+
+Recent development efforts have focused on prepping for the onslaught of new users once we open Diaspora up for more general testing, building our first “Diaspora Application”.  This is going to help drive our APIs to let Diaspora integrate with the Internet at large.  Since up until this point we have actively discouraging masses of people of trying Diaspora, we have been pretty happy with these numbers so far.  Turns out, you only need a manageable amount of users to know if your new feature works or not.
+
+
 	We are going to keep everyone posted about the progress we are making over the next month. We have some really exciting things we can’t wait to announce.  Stay tuned!
 
 - Maxwell
