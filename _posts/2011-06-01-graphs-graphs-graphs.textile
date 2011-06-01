@@ -12,13 +12,13 @@ p(meta). 01 June 2011
 
 Hi Everyone, 
 
-As we move into the next phase of the Diaspora story, I thought it might be interesting to provide some numbers on the great progress we have made so far.  Unless you’ve been following our GitHub repository, it would be hard to see all the work we have put into Diaspora thepast year.
+We know that if you’re not a contributor and don’t follow us on Github, it’s hard to see Diaspora grow and evolve. Now that Diaspora is moving into its second year and a new phase of development, here are some numbers on the progress we’ve made.
 
 According to GitHub, we commit all hours of the day, but we do keep ourselves working our 9-7 most of the time.  We tend to commit mostly after lunch (om nom nom nom nom).
 
 !/images/june01/punchchart.png(punchchart)!:https://github.com/diaspora/diaspora/graphs/punch_card
 
-On the community front, people have been getting involved.  Diaspora has had over 100 unique code contributors and countless others have edited our wiki and updated Diaspora’s translations in over "51 languages":http://99translations.com/public_projects/show/181.   We have over 4,600 followers and over 840 forks, which means that tons of developers are checking out our code.  That makes us the "sixth most popular project on GitHub":https://github.com/popular/watched, right behind great open source projects like "JQuery":https://github.com/jquery/jquery, "Ruby On Rails":https://github.com/rails/rails, and "Node":https://github.com/joyent/node, just to name a few.  
+Our developer community is growing.  Diaspora has had over 100 unique code contributors and countless others have edited our wiki and updated Diaspora’s translations in over "51 languages":http://99translations.com/public_projects/show/181.   We have over 4,600 followers and over 840 forks, which means that tons of developers are checking out our code.  That makes us the "sixth most popular project on GitHub":https://github.com/popular/watched, right behind great open source projects like "JQuery":https://github.com/jquery/jquery, "Ruby On Rails":https://github.com/rails/rails, and "Node":https://github.com/joyent/node, just to name a few.  
 
 
 
@@ -55,6 +55,6 @@ We are going to keep everyone posted about the progress we are making over the n
 * __"twitter":http://twitter.com/joindiaspora__
 * __"identi.ca":http://identi.ca/joindiaspora__
 * __"homepage":http://blog.joindiaspora.com__
-* __"mailing list":http://bit.ly/c94G4h__
+* __"sign up for a beta invite":http://bit.ly/c94G4h__
 
 
