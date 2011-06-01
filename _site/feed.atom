@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Join Diaspora Blog</title>
- <link href="http://www.joindiaspora.com/atom.xml" rel="self"/>
+ <link href="http://www.joindiaspora.com/feed.atom" rel="self"/>
  <link href="http://www.joindiaspora.com/"/>
  <updated>2011-06-01T15:17:33-07:00</updated>
  <id>http://www.joindiaspora.com/</id>
