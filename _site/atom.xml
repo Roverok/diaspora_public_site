@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Join Diaspora Blog</title>
- <link href="http://www.joindiaspora.com/atom.xml" rel="self"/>
- <link href="http://www.joindiaspora.com/"/>
- <updated>2011-06-01T15:51:53-07:00</updated>
- <id>http://www.joindiaspora.com/</id>
+ <link href="http://www.blog.joindiaspora.com/atom.xml" rel="self"/>
+ <link href="http://www.blog.joindiaspora.com/"/>
+ <updated>2011-06-05T19:22:11-07:00</updated>
+ <id>http://www.blog.joindiaspora.com/</id>
  <author>
    <name>diaspora</name>
    <email>team@joindiaspora.com</email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>The Diaspora Project -  First Year In Graphs</title>
-   <link href="http://www.joindiaspora.com//2011/06/01/graphs-graphs-graphs.html"/>
+   <link href="http://www.blog.joindiaspora.com//2011/06/01/graphs-graphs-graphs.html"/>
    <updated>2011-06-01T00:00:00-07:00</updated>
-   <id>http://www.joindiaspora.com//2011/06/01/graphs-graphs-graphs</id>
+   <id>http://www.blog.joindiaspora.com//2011/06/01/graphs-graphs-graphs</id>
    <content type="html">&lt;h2&gt;The Diaspora Project &amp;#8211;  First Year In Graphs&lt;/h2&gt;
 &lt;p class=&quot;meta&quot;&gt;01 June 2011&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/images/june01/beaver.png&quot; title=&quot;a card my sister got me for my birthday&quot; alt=&quot;a card my sister got me for my birthday&quot; /&gt;&lt;/p&gt;
@@ -49,9 +49,9 @@
  
  <entry>
    <title>Moving Forward</title>
-   <link href="http://www.joindiaspora.com//2011/05/16/moving-forward.html"/>
+   <link href="http://www.blog.joindiaspora.com//2011/05/16/moving-forward.html"/>
    <updated>2011-05-16T00:00:00-07:00</updated>
-   <id>http://www.joindiaspora.com//2011/05/16/moving-forward</id>
+   <id>http://www.blog.joindiaspora.com//2011/05/16/moving-forward</id>
    <content type="html">&lt;h2&gt;Moving Forward&lt;/h2&gt;
 &lt;p class=&quot;meta&quot;&gt;16 May 2011&lt;/p&gt;
 &lt;p&gt;It’s hard to believe, but we’ve been working on Diaspora for a whole year now. And I am happy to report that we’re still here, and we’re going strong. From those first pizza-fueled nights in the &lt;span class=&quot;caps&quot;&gt;ACM&lt;/span&gt; room at &lt;span class=&quot;caps&quot;&gt;NYU&lt;/span&gt;, to the Kickstarter going bonkers, to our journey west to San Francisco to work at Pivotal Labs, this past year has been a crazy, unending dream.&lt;/p&gt;
@@ -67,9 +67,9 @@ Maxwell&lt;/p&gt;
  
  <entry>
    <title>Hello From 2011</title>
-   <link href="http://www.joindiaspora.com//2011/01/31/hello-from-the-new-year.html"/>
+   <link href="http://www.blog.joindiaspora.com//2011/01/31/hello-from-the-new-year.html"/>
    <updated>2011-01-31T00:00:00-08:00</updated>
-   <id>http://www.joindiaspora.com//2011/01/31/hello-from-the-new-year</id>
+   <id>http://www.blog.joindiaspora.com//2011/01/31/hello-from-the-new-year</id>
    <content type="html">&lt;h2&gt;Hello From 2011&lt;/h2&gt;
 &lt;p class=&quot;meta&quot;&gt;31 January 2011&lt;/p&gt;
 &lt;p&gt;Hello everyone,&lt;/p&gt;
@@ -88,9 +88,9 @@ Maxwell&lt;/p&gt;
  
  <entry>
    <title>Invite Update</title>
-   <link href="http://www.joindiaspora.com//2010/11/26/joindiaspora-invite-update.html"/>
+   <link href="http://www.blog.joindiaspora.com//2010/11/26/joindiaspora-invite-update.html"/>
    <updated>2010-11-26T00:00:00-08:00</updated>
-   <id>http://www.joindiaspora.com//2010/11/26/joindiaspora-invite-update</id>
+   <id>http://www.blog.joindiaspora.com//2010/11/26/joindiaspora-invite-update</id>
    <content type="html">&lt;h2&gt;Invite Update&lt;/h2&gt;
 &lt;p class=&quot;meta&quot;&gt;26 November 2010&lt;/p&gt;
 &lt;p&gt;Hello Everyone,&lt;/p&gt;
@@ -102,9 +102,9 @@ Maxwell&lt;/p&gt;
  
  <entry>
    <title>Private Alpha Invites Going Out Today</title>
-   <link href="http://www.joindiaspora.com//2010/11/23/private-alpha-released.html"/>
+   <link href="http://www.blog.joindiaspora.com//2010/11/23/private-alpha-released.html"/>
    <updated>2010-11-23T00:00:00-08:00</updated>
-   <id>http://www.joindiaspora.com//2010/11/23/private-alpha-released</id>
+   <id>http://www.blog.joindiaspora.com//2010/11/23/private-alpha-released</id>
    <content type="html">&lt;h2&gt;Private Alpha Invites Going Out Today&lt;/h2&gt;
 &lt;p class=&quot;meta&quot;&gt;23 November 2010&lt;/p&gt;
 &lt;p&gt;Hello Everyone,&lt;/p&gt;
@@ -132,9 +132,9 @@ Our number one goal has been releasing something that works. Sometimes that mean
  
  <entry>
    <title>October Update</title>
-   <link href="http://www.joindiaspora.com//2010/10/29/october-update.html"/>
+   <link href="http://www.blog.joindiaspora.com//2010/10/29/october-update.html"/>
    <updated>2010-10-29T00:00:00-07:00</updated>
-   <id>http://www.joindiaspora.com//2010/10/29/october-update</id>
+   <id>http://www.blog.joindiaspora.com//2010/10/29/october-update</id>
    <content type="html">&lt;h2&gt;October Update&lt;/h2&gt;
 &lt;p class=&quot;meta&quot;&gt;29 October 2010&lt;/p&gt;
 &lt;p&gt;Hey Everyone,&lt;/p&gt;
@@ -165,9 +165,9 @@ Our number one goal has been releasing something that works. Sometimes that mean
  
  <entry>
    <title>Highlights of the First Week</title>
-   <link href="http://www.joindiaspora.com//2010/09/27/highlights-of-the-first-week.html"/>
+   <link href="http://www.blog.joindiaspora.com//2010/09/27/highlights-of-the-first-week.html"/>
    <updated>2010-09-27T00:00:00-07:00</updated>
-   <id>http://www.joindiaspora.com//2010/09/27/highlights-of-the-first-week</id>
+   <id>http://www.blog.joindiaspora.com//2010/09/27/highlights-of-the-first-week</id>
    <content type="html">&lt;h2&gt;Highlights of the First Week&lt;/h2&gt;
 &lt;p class=&quot;meta&quot;&gt;27 September 2010&lt;/p&gt;
 &lt;p&gt;The community’s response to our release has been amazing.  Within the first week of releasing code to developers, Diaspora is the 10th most popular project on &lt;a href=&quot;http://github.com&quot;&gt;Github&lt;/a&gt; with over  2500+ watchers.  We’ve had 412 forks of Diaspora to date, and about a half a million views of the code as well.  Many people have gotten the alpha running on their own machines, and have provided countless bug reports and feature requests.&lt;/p&gt;
@@ -187,9 +187,9 @@ Our number one goal has been releasing something that works. Sometimes that mean
  
  <entry>
    <title>Developer Release</title>
-   <link href="http://www.joindiaspora.com//2010/09/15/developer-release.html"/>
+   <link href="http://www.blog.joindiaspora.com//2010/09/15/developer-release.html"/>
    <updated>2010-09-15T00:00:00-07:00</updated>
-   <id>http://www.joindiaspora.com//2010/09/15/developer-release</id>
+   <id>http://www.blog.joindiaspora.com//2010/09/15/developer-release</id>
    <content type="html">&lt;h2&gt;Developer Release&lt;/h2&gt;
 &lt;p class=&quot;meta&quot;&gt;15 September 2010&lt;/p&gt;
 &lt;p&gt;Today, we are releasing the source code for Diaspora.  This is now a community project and development is open to anyone with the technical expertise who shares the vision of a social network that puts users in control.  From now on, we will be working closely with the community on improving and solidifying Diaspora.&lt;/p&gt;
@@ -240,9 +240,9 @@ Feel free to try to get it running on your machines and use it, but we give no g
  
  <entry>
    <title>An Overdue Update</title>
-   <link href="http://www.joindiaspora.com//2010/08/26/overdue-update.html"/>
+   <link href="http://www.blog.joindiaspora.com//2010/08/26/overdue-update.html"/>
    <updated>2010-08-26T00:00:00-07:00</updated>
-   <id>http://www.joindiaspora.com//2010/08/26/overdue-update</id>
+   <id>http://www.blog.joindiaspora.com//2010/08/26/overdue-update</id>
    <content type="html">&lt;h2&gt;An Overdue Update&lt;/h2&gt;
 &lt;p class=&quot;meta&quot;&gt;26 August 2010 (Edited 30 August 2010)&lt;/p&gt;
 &lt;p&gt;Dear Internet,&lt;/p&gt;
@@ -259,9 +259,9 @@ Feel free to try to get it running on your machines and use it, but we give no g
  
  <entry>
    <title>One Month In</title>
-   <link href="http://www.joindiaspora.com//2010/07/01/one-month-in.html"/>
+   <link href="http://www.blog.joindiaspora.com//2010/07/01/one-month-in.html"/>
    <updated>2010-07-01T00:00:00-07:00</updated>
-   <id>http://www.joindiaspora.com//2010/07/01/one-month-in</id>
+   <id>http://www.blog.joindiaspora.com//2010/07/01/one-month-in</id>
    <content type="html">&lt;h2&gt;One Month In&lt;/h2&gt;
 &lt;p class=&quot;meta&quot;&gt;01 July 2010&lt;/p&gt;
 &lt;p&gt;Greetings from San Francisco!  Today is July 1st, so that means today we are going to be sharing what we have been working on the past few weeks.&lt;/p&gt;
@@ -322,9 +322,9 @@ Feel free to try to get it running on your machines and use it, but we give no g
  
  <entry>
    <title>A Little More Than 24 Hours Left!</title>
-   <link href="http://www.joindiaspora.com//2010/05/31/a-little-more-than-24-hours-left.html"/>
+   <link href="http://www.blog.joindiaspora.com//2010/05/31/a-little-more-than-24-hours-left.html"/>
    <updated>2010-05-31T00:00:00-07:00</updated>
-   <id>http://www.joindiaspora.com//2010/05/31/a-little-more-than-24-hours-left</id>
+   <id>http://www.blog.joindiaspora.com//2010/05/31/a-little-more-than-24-hours-left</id>
    <content type="html">&lt;h2&gt;A Little More Than 24 Hours Left!&lt;/h2&gt;
 &lt;p class=&quot;meta&quot;&gt;31 May 2010&lt;/p&gt;
 &lt;p&gt;All,&lt;/p&gt;
@@ -344,9 +344,9 @@ Feel free to try to get it running on your machines and use it, but we give no g
  
  <entry>
    <title>After the Times</title>
-   <link href="http://www.joindiaspora.com//2010/05/17/after-the-times.html"/>
+   <link href="http://www.blog.joindiaspora.com//2010/05/17/after-the-times.html"/>
    <updated>2010-05-17T00:00:00-07:00</updated>
-   <id>http://www.joindiaspora.com//2010/05/17/after-the-times</id>
+   <id>http://www.blog.joindiaspora.com//2010/05/17/after-the-times</id>
    <content type="html">&lt;h2&gt;After the Times&lt;/h2&gt;
 &lt;p class=&quot;meta&quot;&gt;17 May 2010&lt;/p&gt;
 &lt;p&gt;Everyone,&lt;/p&gt;
@@ -362,9 +362,9 @@ Feel free to try to get it running on your machines and use it, but we give no g
  
  <entry>
    <title>We Made It!</title>
-   <link href="http://www.joindiaspora.com//2010/05/08/we-did-it.html"/>
+   <link href="http://www.blog.joindiaspora.com//2010/05/08/we-did-it.html"/>
    <updated>2010-05-08T00:00:00-07:00</updated>
-   <id>http://www.joindiaspora.com//2010/05/08/we-did-it</id>
+   <id>http://www.blog.joindiaspora.com//2010/05/08/we-did-it</id>
    <content type="html">&lt;h2&gt;We Made It!&lt;/h2&gt;
 &lt;p class=&quot;meta&quot;&gt;08 May 2010 by maxwell&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/images/thank-you-diaspora.full.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
@@ -380,9 +380,9 @@ Feel free to try to get it running on your machines and use it, but we give no g
  
  <entry>
    <title>We Made It Half Way!</title>
-   <link href="http://www.joindiaspora.com//2010/04/30/we-made-it-half-way.html"/>
+   <link href="http://www.blog.joindiaspora.com//2010/04/30/we-made-it-half-way.html"/>
    <updated>2010-04-30T00:00:00-07:00</updated>
-   <id>http://www.joindiaspora.com//2010/04/30/we-made-it-half-way</id>
+   <id>http://www.blog.joindiaspora.com//2010/04/30/we-made-it-half-way</id>
    <content type="html">&lt;h2&gt;We Made It Half Way!&lt;/h2&gt;
 &lt;p class=&quot;meta&quot;&gt;30 &lt;span class=&quot;caps&quot;&gt;APRIL&lt;/span&gt; 2010 by maxwell&lt;/p&gt;
 &lt;p&gt;Wow! After just one week, we are now half-way to our goal!  It has been a really crazy ride for us, &lt;a href=&quot;http://twitter.com/starkness/status/13046623398&quot;&gt;the support&lt;/a&gt; and &lt;a href=&quot;http://twitter.com/hult/status/13077480233&quot;&gt;excitement&lt;/a&gt; we have been getting is absolutely &lt;a href=&quot;http://twitter.com/brokep/status/13078993912&quot;&gt;unreal&lt;/a&gt;.  However, there is still half way to go!  We (the team) are still thinking of new ways we can reach people, and we certainly won&amp;#8217;t stop working hard to make sure we achieve our goal.  So many of you have reached out to us to lend a hand, and if you have been helping us out, or even just reposting our stuff, thank you so much!&lt;/p&gt;
@@ -395,9 +395,9 @@ Feel free to try to get it running on your machines and use it, but we give no g
  
  <entry>
    <title>Questions From Luis Villa</title>
-   <link href="http://www.joindiaspora.com//2010/04/30/a-response-to-mr-villa.html"/>
+   <link href="http://www.blog.joindiaspora.com//2010/04/30/a-response-to-mr-villa.html"/>
    <updated>2010-04-30T00:00:00-07:00</updated>
-   <id>http://www.joindiaspora.com//2010/04/30/a-response-to-mr-villa</id>
+   <id>http://www.blog.joindiaspora.com//2010/04/30/a-response-to-mr-villa</id>
    <content type="html">&lt;h2&gt;Questions From Luis Villa&lt;/h2&gt;
 &lt;p class=&quot;meta&quot;&gt;30 &lt;span class=&quot;caps&quot;&gt;APRIL&lt;/span&gt; 2010 by maxwell&lt;/p&gt;
 &lt;p&gt;Tuesday, Luis Villa &lt;a href=&quot;http://tieguy.org/blog/2010/04/27/questions-for-the-diaspora/&quot;&gt;blogged about us&lt;/a&gt; and asked us some questions.  We really appreciated him taking the time to offer us his constructive feedback, so thanks Luis.  It is nice to know we have some awesome people looking out for us.  We&amp;#8217;ve taken a couple days to try to answer well, and of course, we&amp;#8217;ll think about any suggestions and elaborate on whatever questions are left open.&lt;/p&gt;
@@ -451,9 +451,9 @@ and we are huge fans of the &lt;a href=&quot;http://lorea.cc&quot;&gt;lorea.cc&l
  
  <entry>
    <title>Kickstarter Pitch</title>
-   <link href="http://www.joindiaspora.com//2010/04/27/kickstarter-pitch.html"/>
+   <link href="http://www.blog.joindiaspora.com//2010/04/27/kickstarter-pitch.html"/>
    <updated>2010-04-27T00:00:00-07:00</updated>
-   <id>http://www.joindiaspora.com//2010/04/27/kickstarter-pitch</id>
+   <id>http://www.blog.joindiaspora.com//2010/04/27/kickstarter-pitch</id>
    <content type="html">&lt;h2&gt;Kickstarter Pitch&lt;/h2&gt;
 &lt;p class=&quot;meta&quot;&gt;14 &lt;span class=&quot;caps&quot;&gt;APRIL&lt;/span&gt; 2010 by maxwell&lt;/p&gt;
 &lt;p&gt;&lt;i&gt;This is taken from our &lt;a href=&quot;http://kck.st/9QC2zk&quot;&gt;kickstarter&lt;/a&gt;.  You should check it out for more info.&lt;/i&gt;&lt;/p&gt;
@@ -482,9 +482,9 @@ and we are huge fans of the &lt;a href=&quot;http://lorea.cc&quot;&gt;lorea.cc&l
  
  <entry>
    <title>Dan Made Some Awesome Flyers</title>
-   <link href="http://www.joindiaspora.com//2010/04/24/awesome-flyers-are-here.html"/>
+   <link href="http://www.blog.joindiaspora.com//2010/04/24/awesome-flyers-are-here.html"/>
    <updated>2010-04-24T00:00:00-07:00</updated>
-   <id>http://www.joindiaspora.com//2010/04/24/awesome-flyers-are-here</id>
+   <id>http://www.blog.joindiaspora.com//2010/04/24/awesome-flyers-are-here</id>
    <content type="html">&lt;h2&gt;Dan Made Some Awesome Flyers&lt;/h2&gt;
 &lt;p class=&quot;meta&quot;&gt;24 &lt;span class=&quot;caps&quot;&gt;APRIL&lt;/span&gt; 2010 by maxwell&lt;/p&gt;
 &lt;p&gt;Dan just made some radical flyers for Ilya to handout at a meeting tomorrow.  In case you feel like plastering your hometown with them too, here is a nice image of them.&lt;/p&gt;
@@ -493,9 +493,9 @@ and we are huge fans of the &lt;a href=&quot;http://lorea.cc&quot;&gt;lorea.cc&l
  
  <entry>
    <title>Kickstarter is up!</title>
-   <link href="http://www.joindiaspora.com//2010/04/24/10-kickstarter-is-up.html"/>
+   <link href="http://www.blog.joindiaspora.com//2010/04/24/10-kickstarter-is-up.html"/>
    <updated>2010-04-24T00:00:00-07:00</updated>
-   <id>http://www.joindiaspora.com//2010/04/24/10-kickstarter-is-up</id>
+   <id>http://www.blog.joindiaspora.com//2010/04/24/10-kickstarter-is-up</id>
    <content type="html">&lt;h2&gt;Kickstarter is up!&lt;br /&gt;
 p(meta). 24 &lt;span class=&quot;caps&quot;&gt;APRIL&lt;/span&gt; 2010 by maxwell&lt;/h2&gt;
 &lt;p&gt;Hey everyone!  The Kickstarter is finally up for the project.  We have some serious fundraising to do, but we think that with the help of the Kickstarter and Free Software Communities, we can make it happen.  It would be awesome if you checked our our KS page and clicked that big &amp;#8220;Back this Project&amp;#8221; button.  We think we have some neat rewards to offer, not to mention Diaspora itself will be a great reward for everyone.&lt;/p&gt;
@@ -505,9 +505,9 @@ p(meta). 24 &lt;span class=&quot;caps&quot;&gt;APRIL&lt;/span&gt; 2010 by maxwel
  
  <entry>
    <title>A Little More About The Project</title>
-   <link href="http://www.joindiaspora.com//2010/04/21/a-little-more-about-the-project.html"/>
+   <link href="http://www.blog.joindiaspora.com//2010/04/21/a-little-more-about-the-project.html"/>
    <updated>2010-04-21T00:00:00-07:00</updated>
-   <id>http://www.joindiaspora.com//2010/04/21/a-little-more-about-the-project</id>
+   <id>http://www.blog.joindiaspora.com//2010/04/21/a-little-more-about-the-project</id>
    <content type="html">&lt;h2&gt;A Little More About The Project&lt;/h2&gt;
 &lt;p class=&quot;meta&quot;&gt;21 &lt;span class=&quot;caps&quot;&gt;APRIL&lt;/span&gt; 2010 by maxwell&lt;/p&gt;
 &lt;p&gt;Diaspora aims to be a distributed network, where totally separate computers connect to each other directly, will let us connect without surrendering our privacy.  We call these computers &amp;#8216;seeds&amp;#8217;.  A seed is owned by you, hosted by you, or on a rented server.  Once it has been set up, the seed will aggregate all of your information: your facebook profile, tweets, anything.  We are designing an easily extendable plugin framework for Diaspora, so that whenever newfangled content gets invented, it will be automagically integrated into every seed.&lt;/p&gt;
@@ -518,9 +518,9 @@ p(meta). 24 &lt;span class=&quot;caps&quot;&gt;APRIL&lt;/span&gt; 2010 by maxwel
  
  <entry>
    <title>reason number x</title>
-   <link href="http://www.joindiaspora.com//2010/04/17/links-for-the-day.html"/>
+   <link href="http://www.blog.joindiaspora.com//2010/04/17/links-for-the-day.html"/>
    <updated>2010-04-17T00:00:00-07:00</updated>
-   <id>http://www.joindiaspora.com//2010/04/17/links-for-the-day</id>
+   <id>http://www.blog.joindiaspora.com//2010/04/17/links-for-the-day</id>
    <content type="html">&lt;h2&gt;reason number x&lt;/h2&gt;
 &lt;p class=&quot;meta&quot;&gt;17 &lt;span class=&quot;caps&quot;&gt;APRIL&lt;/span&gt; 2010 by maxwell&lt;/p&gt;
 &lt;p&gt;Every few days, we will post a few interesting links we feel somehow relates confirms why we all need diasproa now more than ever.&lt;/p&gt;</content>
