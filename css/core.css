@@ -21,8 +21,13 @@ h1, span.brand { font-family: 'BrandonGrotesqueLightRegular'; }
 h2             { font-size: 24px; }
 span.brand     { color: #000; font-size: 2em; display: block;}
 
-p   { font-family: 'garamond', 'times', serif; font-size: 1.3em;
+p, #post-content{
+ font-family: 'garamond', 'times', serif;
 	  letter-spacing: 0.05em; text-align: justify;}
+#post-content ul, p {
+  font-size: 1.3em;
+} 
+
 p a { font-weight: bold; }
 
 /* header */
