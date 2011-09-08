@@ -1,0 +1,33 @@
+---
+layout: post
+title: We're making a difference
+---
+h2. {{page.title}}
+
+p(meta). 08 September 2011
+
+Hi everyone -
+
+Although we’ve been quiet for a while, it’s because we’ve been working hard, head-down.  
+
+We’re thrilled to say we’ve built the first stage of a new social web, one better than what’s out there today: a place where each of us owns our own information, where each person controls his or her own privacy, where no-one is a product, and where we all control our own destinies.
+
+*We’re sending out alpha invitations to everyone now, as quickly as we can.  If you’re waiting and haven’t gotten yours yet, you will receive it by the end of October.  Or, "sign up here":https://joindiaspora.com if you haven’t already.*
+
+There’s been big news in the social networking world recently, and *we can’t help but be pleased with the impact our work has had on two of the biggest developments.*  We’re proud that Google+ imitated one of our core features, aspects, with their circles.  And now Facebook is at last moving in the right direction with user control over privacy, a move spurred not just by Google+, but more fundamentally by you and tens of thousands of community members, as well as hundreds of thousands of people who’ve lined up to try Diaspora* -- that is, by all of us who’ve stood up to say “there has to be a better way.”  We’re making a difference already.
+
+*And _aspects_ is just one of the many ways we’re pioneering the future of the social web.*
+
+Here’s a quick preview of some of the other ways:
+* We’ll make the social web more fun than it is today.
+* Our distributed design gives you the security of owning your own identity and data.
+* This also gives you the freedom to do what you want online.
+* Our ecosystem provides the commons, the connective tissue for an evolving social web.
+* We’re not gatekeepers, so our ecosystem will always support the latest apps.
+
+
+We’ll tell you a little more about each of these points in the weeks ahead.
+
+Until then, thanks again for your interest and support.
+
+- Maxwell, Daniel, Ilya, Sarah, Yosem and Peter
