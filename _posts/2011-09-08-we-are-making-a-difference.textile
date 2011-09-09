@@ -1,6 +1,6 @@
 ---
 layout: post
-title: We're making a difference
+title: Diaspora* is making a difference
 ---
 h2. {{page.title}}
 
