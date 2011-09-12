@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+	<head>
+		<!-- <meta name="viewport" content="width=device-width" /> -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>How We Connect Users</title>
+		<meta name="author" content="diaspora" />
+		<link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection" />
+		<link rel="stylesheet" href="/css/core.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="jquery.github_badge.css?v=1">
+    <link href="/atom.xml" rel="alternate" type="application/rss+xml" title="diaspora feed" />
+		<link href="/feed.atom" rel="alternate" type="application/atom" title="diaspora feed" />
+		<meta name="google-site-verification" content="DGuBficaL_YHPIz5-RX8sSnOLA7fzNDLFyqpY7Q2gIk" />
+		<META HTTP-EQUIV="EXPIRES" CONTENT="Sun Sep 11 23:03:14 -0700 2011">
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17207587-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+	</head>
+	<body>
+		<div id="top_gradient"> </div>
+		<div id="top_image"> </div>
+
+		<div id="header" class="main_nav">
+			<h1 class="title"><a href ="/">DIASPORA*</a></h1>
+		<div id="floating_nav">
+			<!-- the span is a mobile hack for some devices' lack of ul
+			background color -->
+			<span style="background-color:#fff;">
+				<ul id="nav">
+					<li><a href="/index.html">blog</a></li>
+					<li><a href="/people.html">people</a></li>
+					<li><a href="/what-is-diaspora.html">project</a></li>
+					<li><a href="/media.html">media</a></li>
+				</ul>
+			</span>
+		</div>
+		</div>
+
+		<div class="container">
+			<div class="post">
+	<div class="twitter_button">
+		<a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="joindiaspora">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+		</div>
+	</div>
+  <section id="post-content">
+    <h2>How We Connect Users</h2>
+<p class="meta">12 September 2011<br />
+by Sarah Mei</p>
+<p><em>Note: this is the first in a series of technical posts about Diaspora&#8217;s software architecture and code. If you have topics you&#8217;d like to see covered in future installments, please let us know.</em></p>
+<p>A single installation of the Diaspora software is called a <strong>pod</strong>. The Diaspora distributed network is made up of hundreds of these pods, each with a set of users &#8211; sometimes just one on an individual pod, sometimes tens of thousands on a community pod. Each pod is run by a different person or organization. But no matter what pod you sign up on, you can connect with users on any other pod.</p>
+<p>When you have friends on different pods, your stream seamlessly mixes updates from remote friends with updates from friends on your pod. In this way Diaspora is a <strong>distributed</strong> social network that resembles, from the user&#8217;s perspective, a <strong>centralized</strong> social network.</p>
+<p><img src="/images/sept2011/diaspora_screenshot.jpg" title="Users from different pods interact seamlessly in posts and comments in the main stream" alt="Users from different pods interact seamlessly in posts and comments in the main stream" /></p>
+<p>But how do these users find each other? In a centralized system, all servers access the same database, so when you search for a friend, there&#8217;s only one place to look. But in the Diaspora ecosystem, each pod has its own database, inaccessible to the other pods. So how does pod A figure out who&#8217;s on pod B, or for that matter, pod C that&#8217;s never been heard from before?</p>
+<p>It all starts with searching. Let&#8217;s say you&#8217;re setting up your own pod. Once you&#8217;ve downloaded the Diaspora source and gotten it running on a server accessible to the internet, you open it up, log in&#8230;and are faced with the vast emptiness of splendid isolation.</p>
+<h2>Let&#8217;s get you some friends</h2>
+<p>There is no central server that keeps a list of existing pods or existing users. Instead, Diaspora depends on an emerging-standard protocol called <a href="http://hueniverse.com/webfinger">webfinger</a> to discover users on remote pods. This all kicks off when you search for someone&#8217;s <b>Diaspora ID</b> in your pod&#8217;s search box.</p>
+<blockquote>
+<p><b>Aside:</b> A Diaspora ID is made up of a username, followed by an @ sign, followed by the pod url. It looks a lot like an email address. But just like with Jabber IDs which also look like email addresses, you can&#8217;t send email to it. It&#8217;s just a unique identifier within the Diaspora ecosystem.</p>
+</blockquote>
+<p>So you&#8217;ve talked to a friend who&#8217;s on a (fictional) pod called otherpod.com, and you&#8217;ve gotten her Diaspora ID &#8211; sarah@otherpod.com. You want to connect, so you put sarah@otherpod.com into the search box on your pod and hit go. A few seconds later, you see her information on the search page with a nice &#8220;Add to Aspect&#8221; button alongside.</p>
+<h2>Magic!</h2>
+<p>I&#8217;d love to claim that, but sadly ponycorns are in short supply around here. Here&#8217;s how it goes down behind the scenes. A detailed explanation follows the diagram.</p>
+<p><img src="/images/sept2011/user_discovery.jpg" title="User discovery flowchart" alt="User discovery flowchart" /></p>
+<p>When it gets a search request for a Diaspora ID, the first thing your pod does is look in its local database to see if it already knows about this person. This is the grey diamond in the diagram. If it can skip all this drama and just show you the information, it does so. But because you&#8217;re on a brand new pod, the only user it knows about is you. So it prepares to retrieve the information you requested from the remote pod.</p>
+<p>From here the process is:</p>
+<p><b>1.</b> Figure out where to search<br />
+<b>2.</b> Search<br />
+<b>3.</b> Retrieve detailed information<br />
+<b>4.</b> Cache data locally<br />
+<b>5.</b> Profit!</p>
+<p>I suppose the last one is optional.</p>
+<h2>1. Find out where to search</h2>
+<p>Your pod extracts the pod <span class="caps">URL</span> from the Diaspora ID (sarah@otherpod.com becomes otherpod.com) and appends a standard location called &#8220;the host-meta route&#8221; to get this <span class="caps">URL</span>:</p>
+<pre>http://otherpod.com/.well-known/host-meta</pre>
+<p>This route is part of the webfinger standard. It&#8217;s the basic way you ask a server whether or not it supports webfinger.</p>
+<p>Your pod then accesses this location and gets back a piece of <span class="caps">XML</span> in a format called <a href="http://hueniverse.com/xrd/"><span class="caps">XRD</span></a>. Basically, accessing the host-meta route is the same as asking the pod, &#8220;How should I send you inquiries about users?&#8221; The <span class="caps">XRD</span> document that it returns tells your pod how to construct the query for the particular user you&#8217;re interested in. Here&#8217;s what it looks like:</p>
+<pre>
+1 &lt;?xml version='1.0' encoding='UTF-8'?&gt;
+2 &lt;XRD xmlns='http://docs.oasis-open.org/ns/xri/xrd-1.0' xmlns:hm='http://host-meta.net/xrd/1.0'&gt;
+3   &lt;hm:Host&gt;otherpod.com&lt;/hm:Host&gt;
+4   &lt;Link rel='lrdd' template='https://otherpod.com/webfinger?q={uri}'&gt;
+5     &lt;Title&gt;Resource Descriptor&lt;/Title&gt;
+6   &lt;/Link&gt;
+7 &lt;/XRD&gt;
+</pre>
+<p>The &#8220;template&#8221; on line 4 is the key. It tells your pod to query for the user by substituting their Diaspora ID for {uri}. So to search for your friend, your pod needs to construct need a <span class="caps">URL</span> like this:</p>
+<pre>https://otherpod.com/webfinger?q=sarah@otherpod.com</pre>
+<blockquote>
+<p><b>Aside:</b> All Diaspora pods accept user queries at the same location, so this step might seem redundant. But Diaspora pods also inter-operate with other, non-Diaspora social systems, and those may have different locations for querying for a user. In other words, when we get a Diaspora ID, we don&#8217;t actually know whether the pod is a Diaspora pod or something else. So we ask for the search route each time.</p>
+</blockquote>
+<h2>2. Search</h2>
+<p>Having figured out the right way to ask, your pod now queries for the user it wants. It accesses the query <span class="caps">URL</span>:</p>
+<pre>https://otherpod.com/webfinger?q=sarah@otherpod.com</pre>
+<p>This returns us another piece of <span class="caps">XML</span> &#8211; another <span class="caps">XRD</span> document &#8211; that gives us some basic information about the user, but mostly just tells us where to go to find more detailed info. Here&#8217;s what it looks like:</p>
+<pre>
+ 1 &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+ 2 &lt;XRD xmlns="http://docs.oasis-open.org/ns/xri/xrd-1.0"&gt;
+ 3   &lt;Subject&gt;acct:sarah@otherpod.com&lt;/Subject&gt;
+ 4   &lt;Alias&gt;"https://otherpod.com/"&lt;/Alias&gt;
+ 5   &lt;Link rel="http://microformats.org/profile/hcard" type="text/html" href="https://otherpod.com/hcard/users/4cec1e372c174347b90000ad"/&gt;
+ 6   &lt;Link rel="http://otherpod.com/seed_location" type = 'text/html' href="https://otherpod.com/"/&gt;
+ 7   &lt;Link rel="http://otherpod.com/guid" type = 'text/html' href="4cec1e372c174347b90000ad"/&gt;
+ 8   &lt;Link rel='http://webfinger.net/rel/profile-page' type='text/html' href='https://otherpod.com/u/sarah'/&gt;
+ 9   &lt;Link rel="http://schemas.google.com/g/2010#updates-from" type="application/atom+xml" href="https://otherpod.com/public/sarah.atom"/&gt;
+10   &lt;Link rel="diaspora-public-key" type = 'RSA' href="[public key omitted for length]"/&gt;
+11 &lt;/XRD&gt;
+</pre>
+<blockquote>
+<p><b>Aside:</b> The webfinger <span class="caps">XRD</span> document is supposed to be just links to information elsewhere. However, as you can see, Diaspora embeds some actual information, such as the person&#8217;s public key, in the document. We implemented this before we fully understood how <span class="caps">XRD</span> was supposed to work. We should at some point move that information to the hcard (see next section).</p>
+</blockquote>
+<h2>3. Retrieve profile</h2>
+<p>To fill out profile details, the pod extracts the &#8220;hcard location&#8221; from the webfinger <span class="caps">XRD</span> document. An hcard is a standard, structured way to represent profile data in <span class="caps">HTML</span>. The hcard location is on line 5 of the document above, with <span class="caps">URL</span>:</p>
+<pre>https://otherpod.com/hcard/users/4cec1e372c174347b90000ad</pre>
+<p>Your pod accesses the hcard location, and gets back a piece of <span class="caps">HTML</span> with additional profile details for the remote user, such as name. Here&#8217;s an excerpt of that hcard &#8211; it&#8217;s quite long.</p>
+<pre>
+ 1 &lt;div id='content'&gt;
+ 2   &lt;h1&gt;Sarah Mei&lt;/h1&gt;
+ 3   &lt;div id='content_inner'&gt;
+ 4     &lt;div class='entity_profile vcard author' id='i'&gt;
+ 5       &lt;h2&gt;User profile&lt;/h2&gt;
+ 6       &lt;dl class='entity_nickname'&gt;
+ 7         &lt;dt&gt;Nickname&lt;/dt&gt;
+ 8         &lt;dd&gt;
+ 9           &lt;a class='nickname url uid' href='https://otherpod.com/' rel='me'&gt;Sarah Mei&lt;/a&gt;
+10         &lt;/dd&gt;
+11       &lt;/dl&gt;
+</pre>
+<p>It goes on, but I think you get the idea.</p>
+<h2>4. Cache data locally</h2>
+<p>Finally, having searched for the user and then retrieved her hcard, your pod extracts the profile details and saves them in its local database. sarah@otherpod.com now shows up in searches you do on your pod.</p>
+<h2>5. Profit!</h2>
+<p>Once you start following your friend, you&#8217;ll get her updates as though she were a user local to your pod. If she also follows you, she&#8217;ll get your updates in her stream too. From there&#8230;who knows what could happen.</p>
+<p>This walkthrough covered just searching and basic user discovery, which is a tiny part of how Diaspora pods interoperate. Once you get into federation of posts and other content between pods, it&#8217;s a whole different ballgame. Stay tuned for that in an upcoming installment.</p>
+  </section>
+	<div style="text-align:center; margin-top: 50px;">
+		<a href="">PERMALINK</a>
+	</div>
+	<div id="new_old">
+		
+		
+		<span class="button_right"><a href="/2011/09/08/we-are-making-a-difference.html" class="button_right">OLDER</a></span>
+		
+	</div>
+</div>
+
+      <div id="sample_project_badge"></div>
+
+              <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+		</div>
+
+		<div id="footer">
+
+
+			<div id="footer_left">
+        <span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dc:title" rel="dc:type"><span class="brand">DIASPORA*&nbsp;</span>Daniel Grippi | Maxwell Salzberg | Raphael Sofaer | Ilya Zhitomirskiy</span><br/><br/>
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/us/80x15.png" /></a>
+        <div id='donate'>
+          <span>Give a gift to Diaspora!</span>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="7AS6ZRJJ9GVQC">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+      </div>
+			</div>
+			<div id="footer_right">
+				<div class="span-4 append-1 last">
+					<span class="footer_statement">We're Social!</span>
+					<ul class="span-4 last" style="font-weight:bold;">
+						<li><a href="http://twitter.com/joindiaspora">Twitter</a></li>
+						<li><a href="http://identi.ca/joindiaspora">Identi.ca</a></li>
+						<li><a href="http://www.facebook.com/pages/Join-Diaspora/118635234836351">Facebook</a></li>
+					</ul>
+				</div>
+				<div class="span-4 last">
+					<span class="footer_statement">Contact Us</span>
+					<ul class="span-4 last">
+						<li><b>questions</b> AT joindiaspora</li>
+						<li><b>people</b> AT joindiaspora</li>
+						<li><b>press</b> AT joindiaspora</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+
+
+<script type="text/javascript" charset="utf-8">
+  var is_ssl = ("https:" == document.location.protocol);
+  var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+  document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript" charset="utf-8">
+  var feedback_widget_options = {};
+
+  feedback_widget_options.display = "overlay";  
+  feedback_widget_options.company = "diaspora";
+  feedback_widget_options.placement = "left";
+  feedback_widget_options.color = "#222";
+  feedback_widget_options.style = "idea";
+  
+
+  var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+</script>
+
+
+
+
+
+
+
+	</body>
+</html>

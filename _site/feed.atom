@@ -4,13 +4,108 @@
  <title>Join Diaspora Blog</title>
  <link href="http://www.joindiaspora.com/feed.atom" rel="self"/>
  <link href="http://www.joindiaspora.com/"/>
- <updated>2011-09-08T17:13:18-07:00</updated>
+ <updated>2011-09-11T23:03:14-07:00</updated>
  <id>http://www.joindiaspora.com/</id>
  <author>
    <name>diaspora</name>
    <email>team@joindiaspora.com</email>
  </author>
 
+ 
+ <entry>
+   <title>How We Connect Users</title>
+   <link href="http://www.joindiaspora.com//2011/09/12/user-discovery-between-pods.html"/>
+   <updated>2011-09-12T00:00:00-07:00</updated>
+   <id>http://www.joindiaspora.com//2011/09/12/user-discovery-between-pods</id>
+   <content type="html">&lt;h2&gt;How We Connect Users&lt;/h2&gt;
+&lt;p class=&quot;meta&quot;&gt;12 September 2011&lt;br /&gt;
+by Sarah Mei&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: this is the first in a series of technical posts about Diaspora&amp;#8217;s software architecture and code. If you have topics you&amp;#8217;d like to see covered in future installments, please let us know.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A single installation of the Diaspora software is called a &lt;strong&gt;pod&lt;/strong&gt;. The Diaspora distributed network is made up of hundreds of these pods, each with a set of users &amp;#8211; sometimes just one on an individual pod, sometimes tens of thousands on a community pod. Each pod is run by a different person or organization. But no matter what pod you sign up on, you can connect with users on any other pod.&lt;/p&gt;
+&lt;p&gt;When you have friends on different pods, your stream seamlessly mixes updates from remote friends with updates from friends on your pod. In this way Diaspora is a &lt;strong&gt;distributed&lt;/strong&gt; social network that resembles, from the user&amp;#8217;s perspective, a &lt;strong&gt;centralized&lt;/strong&gt; social network.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/sept2011/diaspora_screenshot.jpg&quot; title=&quot;Users from different pods interact seamlessly in posts and comments in the main stream&quot; alt=&quot;Users from different pods interact seamlessly in posts and comments in the main stream&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;But how do these users find each other? In a centralized system, all servers access the same database, so when you search for a friend, there&amp;#8217;s only one place to look. But in the Diaspora ecosystem, each pod has its own database, inaccessible to the other pods. So how does pod A figure out who&amp;#8217;s on pod B, or for that matter, pod C that&amp;#8217;s never been heard from before?&lt;/p&gt;
+&lt;p&gt;It all starts with searching. Let&amp;#8217;s say you&amp;#8217;re setting up your own pod. Once you&amp;#8217;ve downloaded the Diaspora source and gotten it running on a server accessible to the internet, you open it up, log in&amp;#8230;and are faced with the vast emptiness of splendid isolation.&lt;/p&gt;
+&lt;h2&gt;Let&amp;#8217;s get you some friends&lt;/h2&gt;
+&lt;p&gt;There is no central server that keeps a list of existing pods or existing users. Instead, Diaspora depends on an emerging-standard protocol called &lt;a href=&quot;http://hueniverse.com/webfinger&quot;&gt;webfinger&lt;/a&gt; to discover users on remote pods. This all kicks off when you search for someone&amp;#8217;s &lt;b&gt;Diaspora ID&lt;/b&gt; in your pod&amp;#8217;s search box.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;b&gt;Aside:&lt;/b&gt; A Diaspora ID is made up of a username, followed by an @ sign, followed by the pod url. It looks a lot like an email address. But just like with Jabber IDs which also look like email addresses, you can&amp;#8217;t send email to it. It&amp;#8217;s just a unique identifier within the Diaspora ecosystem.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So you&amp;#8217;ve talked to a friend who&amp;#8217;s on a (fictional) pod called otherpod.com, and you&amp;#8217;ve gotten her Diaspora ID &amp;#8211; sarah@otherpod.com. You want to connect, so you put sarah@otherpod.com into the search box on your pod and hit go. A few seconds later, you see her information on the search page with a nice &amp;#8220;Add to Aspect&amp;#8221; button alongside.&lt;/p&gt;
+&lt;h2&gt;Magic!&lt;/h2&gt;
+&lt;p&gt;I&amp;#8217;d love to claim that, but sadly ponycorns are in short supply around here. Here&amp;#8217;s how it goes down behind the scenes. A detailed explanation follows the diagram.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/sept2011/user_discovery.jpg&quot; title=&quot;User discovery flowchart&quot; alt=&quot;User discovery flowchart&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;When it gets a search request for a Diaspora ID, the first thing your pod does is look in its local database to see if it already knows about this person. This is the grey diamond in the diagram. If it can skip all this drama and just show you the information, it does so. But because you&amp;#8217;re on a brand new pod, the only user it knows about is you. So it prepares to retrieve the information you requested from the remote pod.&lt;/p&gt;
+&lt;p&gt;From here the process is:&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;1.&lt;/b&gt; Figure out where to search&lt;br /&gt;
+&lt;b&gt;2.&lt;/b&gt; Search&lt;br /&gt;
+&lt;b&gt;3.&lt;/b&gt; Retrieve detailed information&lt;br /&gt;
+&lt;b&gt;4.&lt;/b&gt; Cache data locally&lt;br /&gt;
+&lt;b&gt;5.&lt;/b&gt; Profit!&lt;/p&gt;
+&lt;p&gt;I suppose the last one is optional.&lt;/p&gt;
+&lt;h2&gt;1. Find out where to search&lt;/h2&gt;
+&lt;p&gt;Your pod extracts the pod &lt;span class=&quot;caps&quot;&gt;URL&lt;/span&gt; from the Diaspora ID (sarah@otherpod.com becomes otherpod.com) and appends a standard location called &amp;#8220;the host-meta route&amp;#8221; to get this &lt;span class=&quot;caps&quot;&gt;URL&lt;/span&gt;:&lt;/p&gt;
+&lt;pre&gt;http://otherpod.com/.well-known/host-meta&lt;/pre&gt;
+&lt;p&gt;This route is part of the webfinger standard. It&amp;#8217;s the basic way you ask a server whether or not it supports webfinger.&lt;/p&gt;
+&lt;p&gt;Your pod then accesses this location and gets back a piece of &lt;span class=&quot;caps&quot;&gt;XML&lt;/span&gt; in a format called &lt;a href=&quot;http://hueniverse.com/xrd/&quot;&gt;&lt;span class=&quot;caps&quot;&gt;XRD&lt;/span&gt;&lt;/a&gt;. Basically, accessing the host-meta route is the same as asking the pod, &amp;#8220;How should I send you inquiries about users?&amp;#8221; The &lt;span class=&quot;caps&quot;&gt;XRD&lt;/span&gt; document that it returns tells your pod how to construct the query for the particular user you&amp;#8217;re interested in. Here&amp;#8217;s what it looks like:&lt;/p&gt;
+&lt;pre&gt;
+1 &amp;lt;?xml version='1.0' encoding='UTF-8'?&amp;gt;
+2 &amp;lt;XRD xmlns='http://docs.oasis-open.org/ns/xri/xrd-1.0' xmlns:hm='http://host-meta.net/xrd/1.0'&amp;gt;
+3   &amp;lt;hm:Host&amp;gt;otherpod.com&amp;lt;/hm:Host&amp;gt;
+4   &amp;lt;Link rel='lrdd' template='https://otherpod.com/webfinger?q={uri}'&amp;gt;
+5     &amp;lt;Title&amp;gt;Resource Descriptor&amp;lt;/Title&amp;gt;
+6   &amp;lt;/Link&amp;gt;
+7 &amp;lt;/XRD&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;The &amp;#8220;template&amp;#8221; on line 4 is the key. It tells your pod to query for the user by substituting their Diaspora ID for {uri}. So to search for your friend, your pod needs to construct need a &lt;span class=&quot;caps&quot;&gt;URL&lt;/span&gt; like this:&lt;/p&gt;
+&lt;pre&gt;https://otherpod.com/webfinger?q=sarah@otherpod.com&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;b&gt;Aside:&lt;/b&gt; All Diaspora pods accept user queries at the same location, so this step might seem redundant. But Diaspora pods also inter-operate with other, non-Diaspora social systems, and those may have different locations for querying for a user. In other words, when we get a Diaspora ID, we don&amp;#8217;t actually know whether the pod is a Diaspora pod or something else. So we ask for the search route each time.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;2. Search&lt;/h2&gt;
+&lt;p&gt;Having figured out the right way to ask, your pod now queries for the user it wants. It accesses the query &lt;span class=&quot;caps&quot;&gt;URL&lt;/span&gt;:&lt;/p&gt;
+&lt;pre&gt;https://otherpod.com/webfinger?q=sarah@otherpod.com&lt;/pre&gt;
+&lt;p&gt;This returns us another piece of &lt;span class=&quot;caps&quot;&gt;XML&lt;/span&gt; &amp;#8211; another &lt;span class=&quot;caps&quot;&gt;XRD&lt;/span&gt; document &amp;#8211; that gives us some basic information about the user, but mostly just tells us where to go to find more detailed info. Here&amp;#8217;s what it looks like:&lt;/p&gt;
+&lt;pre&gt;
+ 1 &amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&amp;gt;
+ 2 &amp;lt;XRD xmlns=&quot;http://docs.oasis-open.org/ns/xri/xrd-1.0&quot;&amp;gt;
+ 3   &amp;lt;Subject&amp;gt;acct:sarah@otherpod.com&amp;lt;/Subject&amp;gt;
+ 4   &amp;lt;Alias&amp;gt;&quot;https://otherpod.com/&quot;&amp;lt;/Alias&amp;gt;
+ 5   &amp;lt;Link rel=&quot;http://microformats.org/profile/hcard&quot; type=&quot;text/html&quot; href=&quot;https://otherpod.com/hcard/users/4cec1e372c174347b90000ad&quot;/&amp;gt;
+ 6   &amp;lt;Link rel=&quot;http://otherpod.com/seed_location&quot; type = 'text/html' href=&quot;https://otherpod.com/&quot;/&amp;gt;
+ 7   &amp;lt;Link rel=&quot;http://otherpod.com/guid&quot; type = 'text/html' href=&quot;4cec1e372c174347b90000ad&quot;/&amp;gt;
+ 8   &amp;lt;Link rel='http://webfinger.net/rel/profile-page' type='text/html' href='https://otherpod.com/u/sarah'/&amp;gt;
+ 9   &amp;lt;Link rel=&quot;http://schemas.google.com/g/2010#updates-from&quot; type=&quot;application/atom+xml&quot; href=&quot;https://otherpod.com/public/sarah.atom&quot;/&amp;gt;
+10   &amp;lt;Link rel=&quot;diaspora-public-key&quot; type = 'RSA' href=&quot;[public key omitted for length]&quot;/&amp;gt;
+11 &amp;lt;/XRD&amp;gt;
+&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;b&gt;Aside:&lt;/b&gt; The webfinger &lt;span class=&quot;caps&quot;&gt;XRD&lt;/span&gt; document is supposed to be just links to information elsewhere. However, as you can see, Diaspora embeds some actual information, such as the person&amp;#8217;s public key, in the document. We implemented this before we fully understood how &lt;span class=&quot;caps&quot;&gt;XRD&lt;/span&gt; was supposed to work. We should at some point move that information to the hcard (see next section).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;3. Retrieve profile&lt;/h2&gt;
+&lt;p&gt;To fill out profile details, the pod extracts the &amp;#8220;hcard location&amp;#8221; from the webfinger &lt;span class=&quot;caps&quot;&gt;XRD&lt;/span&gt; document. An hcard is a standard, structured way to represent profile data in &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt;. The hcard location is on line 5 of the document above, with &lt;span class=&quot;caps&quot;&gt;URL&lt;/span&gt;:&lt;/p&gt;
+&lt;pre&gt;https://otherpod.com/hcard/users/4cec1e372c174347b90000ad&lt;/pre&gt;
+&lt;p&gt;Your pod accesses the hcard location, and gets back a piece of &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; with additional profile details for the remote user, such as name. Here&amp;#8217;s an excerpt of that hcard &amp;#8211; it&amp;#8217;s quite long.&lt;/p&gt;
+&lt;pre&gt;
+ 1 &amp;lt;div id='content'&amp;gt;
+ 2   &amp;lt;h1&amp;gt;Sarah Mei&amp;lt;/h1&amp;gt;
+ 3   &amp;lt;div id='content_inner'&amp;gt;
+ 4     &amp;lt;div class='entity_profile vcard author' id='i'&amp;gt;
+ 5       &amp;lt;h2&amp;gt;User profile&amp;lt;/h2&amp;gt;
+ 6       &amp;lt;dl class='entity_nickname'&amp;gt;
+ 7         &amp;lt;dt&amp;gt;Nickname&amp;lt;/dt&amp;gt;
+ 8         &amp;lt;dd&amp;gt;
+ 9           &amp;lt;a class='nickname url uid' href='https://otherpod.com/' rel='me'&amp;gt;Sarah Mei&amp;lt;/a&amp;gt;
+10         &amp;lt;/dd&amp;gt;
+11       &amp;lt;/dl&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;It goes on, but I think you get the idea.&lt;/p&gt;
+&lt;h2&gt;4. Cache data locally&lt;/h2&gt;
+&lt;p&gt;Finally, having searched for the user and then retrieved her hcard, your pod extracts the profile details and saves them in its local database. sarah@otherpod.com now shows up in searches you do on your pod.&lt;/p&gt;
+&lt;h2&gt;5. Profit!&lt;/h2&gt;
+&lt;p&gt;Once you start following your friend, you&amp;#8217;ll get her updates as though she were a user local to your pod. If she also follows you, she&amp;#8217;ll get your updates in her stream too. From there&amp;#8230;who knows what could happen.&lt;/p&gt;
+&lt;p&gt;This walkthrough covered just searching and basic user discovery, which is a tiny part of how Diaspora pods interoperate. Once you get into federation of posts and other content between pods, it&amp;#8217;s a whole different ballgame. Stay tuned for that in an upcoming installment.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Diaspora* is making a difference</title>
