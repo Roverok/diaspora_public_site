@@ -4,7 +4,7 @@
  <title>Join Diaspora Blog</title>
  <link href="http://www.joindiaspora.com/feed.atom" rel="self"/>
  <link href="http://www.joindiaspora.com/"/>
- <updated>2011-09-11T23:03:14-07:00</updated>
+ <updated>2011-09-14T12:57:42-07:00</updated>
  <id>http://www.joindiaspora.com/</id>
  <author>
    <name>diaspora</name>
@@ -14,11 +14,11 @@
  
  <entry>
    <title>How We Connect Users</title>
-   <link href="http://www.joindiaspora.com//2011/09/12/user-discovery-between-pods.html"/>
-   <updated>2011-09-12T00:00:00-07:00</updated>
-   <id>http://www.joindiaspora.com//2011/09/12/user-discovery-between-pods</id>
+   <link href="http://www.joindiaspora.com//2011/09/14/user-discovery-between-pods.html"/>
+   <updated>2011-09-14T00:00:00-07:00</updated>
+   <id>http://www.joindiaspora.com//2011/09/14/user-discovery-between-pods</id>
    <content type="html">&lt;h2&gt;How We Connect Users&lt;/h2&gt;
-&lt;p class=&quot;meta&quot;&gt;12 September 2011&lt;br /&gt;
+&lt;p class=&quot;meta&quot;&gt;14 September 2011&lt;br /&gt;
 by Sarah Mei&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Note: this is the first in a series of technical posts about Diaspora&amp;#8217;s software architecture and code. If you have topics you&amp;#8217;d like to see covered in future installments, please let us know.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;A single installation of the Diaspora software is called a &lt;strong&gt;pod&lt;/strong&gt;. The Diaspora distributed network is made up of hundreds of these pods, each with a set of users &amp;#8211; sometimes just one on an individual pod, sometimes tens of thousands on a community pod. Each pod is run by a different person or organization. But no matter what pod you sign up on, you can connect with users on any other pod.&lt;/p&gt;

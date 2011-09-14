@@ -4,7 +4,7 @@ title: How We Connect Users
 ---
 h2. {{page.title}}
 
-p(meta). 12 September 2011
+p(meta). 14 September 2011
 by Sarah Mei
 
 _Note: this is the first in a series of technical posts about Diaspora's software architecture and code. If you have topics you'd like to see covered in future installments, please let us know._
