@@ -40,7 +40,7 @@ Come with us, and we’ll build a brighter future together.
 - Dan, Max, Ilya, Sarah, Yosem, and Peter
 
 
-fn1(smaller_indented). JoinDiaspora.com is just one of the pods within the Diaspora* ecosystem.  "Here’s a directory of some of the others that are open to new users":http://podupti.me/ (there are even more out there too, including many that are private, not open).  If you’re eager for an account, you may decide to sign up on any of the open ones, but please be aware that the Diaspora* ecosystem is still very much in an alpha, or pre-launch phase, so it’s likely that you’ll encounter some issues.  
+fn1(smaller_indented). JoinDiaspora.com is just one of the pods within the Diaspora* ecosystem.  "Here’s a directory of some of the others that are open to new users":http://podupti.me/ (there are even more out there too, including many that are private, not open).  *If you’re eager for an account, you may decide to sign up on any of the open ones, but please be aware that the Diaspora ecosystem is still very much in an alpha, or pre-launch phase, so it’s likely that you’ll encounter some issues.*
 
 fn2(smaller_indented). Excerpts from "this blog post":http://fullofsecrets.livejournal.com/105666.html by Garidin Winslow.
 
