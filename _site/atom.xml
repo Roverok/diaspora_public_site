@@ -4,7 +4,7 @@
  <title>Join Diaspora Blog</title>
  <link href="http://www.blog.joindiaspora.com/atom.xml" rel="self"/>
  <link href="http://www.blog.joindiaspora.com/"/>
- <updated>2011-09-21T13:41:56-07:00</updated>
+ <updated>2011-09-21T13:48:46-07:00</updated>
  <id>http://www.blog.joindiaspora.com/</id>
  <author>
    <name>diaspora</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Diaspora* means a brighter future for all of us</title>
-   <link href="http://www.blog.joindiaspora.com//2011/09/15/developer-release.html"/>
-   <updated>2011-09-15T00:00:00-07:00</updated>
-   <id>http://www.blog.joindiaspora.com//2011/09/15/developer-release</id>
+   <link href="http://www.blog.joindiaspora.com//2011/09/21/diaspora-means-a-brighter-future-for-all-of-us.html"/>
+   <updated>2011-09-21T00:00:00-07:00</updated>
+   <id>http://www.blog.joindiaspora.com//2011/09/21/diaspora-means-a-brighter-future-for-all-of-us</id>
    <content type="html">&lt;h2&gt;Diaspora* means a brighter future for all of us&lt;/h2&gt;
 &lt;p class=&quot;meta&quot;&gt;21 September 2011&lt;/p&gt;
 &lt;p&gt;Hi everyone -&lt;/p&gt;
