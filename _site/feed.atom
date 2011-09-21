@@ -4,13 +4,44 @@
  <title>Join Diaspora Blog</title>
  <link href="http://www.joindiaspora.com/feed.atom" rel="self"/>
  <link href="http://www.joindiaspora.com/"/>
- <updated>2011-09-14T12:57:42-07:00</updated>
+ <updated>2011-09-21T13:41:56-07:00</updated>
  <id>http://www.joindiaspora.com/</id>
  <author>
    <name>diaspora</name>
    <email>team@joindiaspora.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Diaspora* means a brighter future for all of us</title>
+   <link href="http://www.joindiaspora.com//2011/09/15/developer-release.html"/>
+   <updated>2011-09-15T00:00:00-07:00</updated>
+   <id>http://www.joindiaspora.com//2011/09/15/developer-release</id>
+   <content type="html">&lt;h2&gt;Diaspora* means a brighter future for all of us&lt;/h2&gt;
+&lt;p class=&quot;meta&quot;&gt;21 September 2011&lt;/p&gt;
+&lt;p&gt;Hi everyone -&lt;/p&gt;
+&lt;p&gt;The response to our post two weeks ago has been amazing &amp;#8212; it’s led to a real surge in activity, and tons of buzz on blogs and in the Twittersphere.  We’re thrilled to see how enthusiastic people are to get started on Diaspora*.&lt;/p&gt;
+&lt;p&gt;As promised in that previous post, we want to tell you a little more about why we believe so strongly in Diaspora*&amp;#8217;s mission: to build &lt;strong&gt;a new and better social web, one that&amp;#8217;s 100% owned and controlled by you and other Diasporans.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Diaspora&amp;#8217;s distributed design is a huge part of it.&lt;/strong&gt;  Like the Internet itself, Diaspora* isn&amp;#8217;t housed in any one place, and it&amp;#8217;s not controlled by any one entity (including us).  We&amp;#8217;ve created software that lets you set up and run your own social network on your own &amp;#8220;pod&amp;#8221; (or server) and connect your network to the larger Diaspora* ecosystem.  You can have a pod all to yourself, or one for just you and your friends, or your family, giving you complete ownership and control over your personal social information (including your identity, your posts, and your photos) and how it’s all stored and shared.  Or you can simply sign up at joindiaspora.com, or at one of more than 20 open pods.&lt;sup class=&quot;footnote&quot; id=&quot;fnr1&quot;&gt;&lt;a href=&quot;#fn1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;This means &lt;strong&gt;you can do what you want.&lt;/strong&gt;  You can express yourself candidly, and be your authentic self.  You can go by whatever name you like on Diaspora*.  Pseudonyms are fine, and this both protects you (if you want to say something your boss or your parents disagree with) and &lt;strong&gt;opens the door to real connection&lt;/strong&gt;.  Here’s how one blogger and Diasporan put it:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Maybe his kind words mean so much to me because T is someone I&amp;#8217;ve met through a [pseudo]nym &amp;#8212; he got to know the real me&amp;#8217;s ideals and beliefs, and liked that person&amp;#8230;  A compliment from [him] is based on my own sincerity, and thus, has a certain purity. It is untainted by perceptions of how I look, what I&amp;#8217;m wearing, and so on. Given that, I value it especially highly.&lt;sup class=&quot;footnote&quot; id=&quot;fnr2&quot;&gt;&lt;a href=&quot;#fn2&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This kind of authentic connection brings back the &lt;strong&gt;social freedom&lt;/strong&gt; that made the Internet awesome in the first place.  And this is just the beginning.&lt;/p&gt;
+&lt;p&gt;You can make great connections with anyone in the Diaspora* ecosystem, not just the people on your own pod, because the pods are linked together.&lt;/p&gt;
+&lt;p&gt;You can also use Diaspora* as a home base for your outbound posts on Facebook, Twitter, and Tumblr, writing to them all from Diaspora*.  In the future, you’ll be able to monitor your inbound streams from Diaspora* as well.&lt;/p&gt;
+&lt;p&gt;Yet our distributed design means &lt;strong&gt;no big corporation will ever control Diaspora.&lt;/strong&gt;  Diaspora* will never sell your social life to advertisers, and you won’t have to conform to someone’s arbitrary rules or look over your shoulder before you speak.&lt;/p&gt;
+&lt;p&gt;And because your information is yours, not ours, &lt;strong&gt;you’ll have the ultimate power&lt;/strong&gt; &amp;#8212; the ability to move your profile and all your social data from one pod to another, without sacrificing your connection to the social web.  Over time, this will bring an end to the indifferent, self-serving behavior that people can’t stand&lt;sup class=&quot;footnote&quot; id=&quot;fnr3&quot;&gt;&lt;a href=&quot;#fn3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; from the walled gardens that dominate social networking today.  When you can vote with your feet for the environment where you feel safest, the big guys will have to shape up, or risk losing you.&lt;/p&gt;
+&lt;p&gt;We’re still building this move-your-profile capability, as well as other key features.  It’s hard work, but &lt;strong&gt;we’re building the future we want to see&lt;/strong&gt;, with incredible community support.&lt;/p&gt;
+&lt;p&gt;Diaspora* is a genuine community effort.  More than 160 people have contributed to our code, putting us in the top 2% of all open source projects tracked by Ohloh.&lt;sup class=&quot;footnote&quot; id=&quot;fnr4&quot;&gt;&lt;a href=&quot;#fn4&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;  Hundreds more volunteers have translated Diaspora* into 13 of the world’s spoken languages so far, with another 32 translations in progress.  Thousands of Diasporans have given us more than 3,000 points of feedback.  (We’re listening closely, and building the features you’re asking for as fast as we can.)  And of course, thousands of donors have helped pay for our development, and hundreds of thousands of people are patiently waiting for access to try it out.&lt;/p&gt;
+&lt;p&gt;We need your help too.  &lt;a href=&quot;https://github.com/diaspora/diaspora/wiki/Help-us-build-the-future-of-the-social-web&quot;&gt;Take a look at the many ways you can get involved.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Come with us, and we’ll build a brighter future together.&lt;/p&gt;
+&lt;p&gt;- Dan, Max, Ilya, Sarah, Yosem, and Peter&lt;/p&gt;
+&lt;p class=&quot;footnote smaller_indented&quot; id=&quot;fn1&quot;&gt;&lt;a href=&quot;#fnr1&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; JoinDiaspora.com is just one of the pods within the Diaspora* ecosystem.  &lt;a href=&quot;http://podupti.me/&quot;&gt;Here’s a directory of some of the others that are open to new users&lt;/a&gt; (there are even more out there too, including many that are private, not open).  If you’re eager for an account, you may decide to sign up on any of the open ones, but please be aware that the Diaspora* ecosystem is still very much in an alpha, or pre-launch phase, so it’s likely that you’ll encounter some issues.&lt;/p&gt;
+&lt;p class=&quot;footnote smaller_indented&quot; id=&quot;fn2&quot;&gt;&lt;a href=&quot;#fnr2&quot;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; Excerpts from &lt;a href=&quot;http://fullofsecrets.livejournal.com/105666.html&quot;&gt;this blog post&lt;/a&gt; by Garidin Winslow.&lt;/p&gt;
+&lt;p class=&quot;footnote smaller_indented&quot; id=&quot;fn3&quot;&gt;&lt;a href=&quot;#fnr3&quot;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt; &lt;a href=&quot;http://www.inc.com/news/articles/201107/facebook-scores-poorly-on-customer-satisfaction.html&quot;&gt;&lt;em&gt;Report: Facebook Is Most Hated Social Media Company&lt;/em&gt;, Courtney Rubin, Inc. Magazine, July 20, 2011.&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;footnote smaller_indented&quot; id=&quot;fn4&quot;&gt;&lt;a href=&quot;#fnr4&quot;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt; &lt;a href=&quot;http://www.ohloh.net/p/diaspora/factoids/10029264&quot;&gt;http://www.ohloh.net/p/diaspora/factoids/10029264&lt;/a&gt;&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>How We Connect Users</title>

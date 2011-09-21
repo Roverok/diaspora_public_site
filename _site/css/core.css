@@ -180,3 +180,8 @@ div.tutorial img {
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
+
+.smaller_indented {
+  padding: 0 30px;
+  font-size: small;
+}
